@@ -1,0 +1,103 @@
+{
+	"intro": "Forty-nine changes in a single day. Here are ten you'll notice.",
+	"changes": {
+		"1": {
+			"headline": "Signed out? The Welcome page offers GitHub sign-in",
+			"eyebrow": "When you're signed out",
+			"say": "The Welcome page now offers GitHub sign-in when you're signed out.",
+			"visual": { "scene": { "name": "button-swap", "params": {
+				"tab": "Welcome",
+				"before": { "text": "Try out the new Agents window", "icon": "agent" },
+				"after": { "text": "Sign in to GitHub", "icon": "github" } } } },
+			"motion": { "sync": { "swap": "GitHub" } }
+		},
+		"2": {
+			"headline": "Session rows lead with New Nested Session",
+			"eyebrow": "A session's first button",
+			"say": "A session's first button now starts a nested session.",
+			"visual": { "demo": "c2" },
+			"motion": { "from": 5, "hero": ["plus", "tooltip", "nested"], "loupe": { "block": [0, 40, 290, 240] } }
+		},
+		"3": {
+			"headline": "The app icon now shows the badge",
+			"eyebrow": "Agents window",
+			"say": "The app icon now shows the badge.",
+			"visual": { "scene": { "name": "app-badge", "params": { "count": 2 } } },
+			"motion": { "sync": { "badge": "badge" } }
+		},
+		"4": {
+			"headline": "/fork, with a title or with a prompt",
+			"eyebrow": "In Agent Host chats",
+			"say": "Fork a chat with a title, or a prompt to send right away.",
+			"visual": { "demo": "c4" },
+			"motion": { "from": 1.6, "hero": ["title", "prompt"], "loupe": { "block": [345, 573, 610, 127] } }
+		},
+		"5": {
+			"headline": "Plugin links that ask before they act",
+			"eyebrow": "VS Code links",
+			"say": "Plugin links now ask before adding or installing anything.",
+			"visual": { "demo": "c5" },
+			"motion": { "from": 6.42, "hero": ["dialog2"], "loupe": { "block": [405, 228, 470, 264] } }
+		},
+		"6": {
+			"headline": "Save a whole image batch as one ZIP",
+			"eyebrow": "Generated images in chat",
+			"say": "Save a whole batch of generated images as one ZIP.",
+			"visual": { "scene": { "name": "list-actions", "params": {
+				"rows": [{ "label": "Image batch", "sub": "4 images" }, { "label": "lighthouse-1.png" }, { "label": "lighthouse-2.png" }],
+				"row": 0,
+				"after": { "icon": "desktop-download", "tooltip": "Download All Images as ZIP" },
+				"images": ["scenes/lighthouse-1.png", "scenes/lighthouse-2.png", "scenes/lighthouse-3.png", "scenes/lighthouse-4.png"] } } },
+			"motion": { "sync": { "hover": "batch", "click": "ZIP" } }
+		},
+		"7": {
+			"headline": "Language Status says when diagnostics are cut",
+			"eyebrow": "Editor Language Status",
+			"say": "Language Status now says when some diagnostics aren't shown.",
+			"visual": { "demo": "c7" },
+			"motion": { "from": 2.9, "hero": ["hover", "status"], "loupe": { "block": [745, 612, 535, 108] } }
+		},
+		"8": {
+			"headline": "Removed steering messages stay removed",
+			"eyebrow": "In Agent Host chats",
+			"say": "Remove a queued steering message, and the agent never gets it.",
+			"visual": { "scene": { "name": "queued-message", "params": {
+				"message": "Also add a test for the empty state",
+				"action": "Remove from Queue" } } },
+			"motion": { "sync": { "remove": "message", "done": "never" } }
+		},
+		"9": {
+			"headline": "Cloud Sandbox sessions keep their model picker",
+			"eyebrow": "Cloud Sandbox sessions",
+			"say": "Reopened Cloud Sandbox sessions get their model picker back.",
+			"visual": { "scene": { "name": "picker", "params": {
+				"button": { "label": "Claude Opus 5.5", "icon": "sparkle" },
+				"items": [{ "label": "Auto", "icon": "sparkle" }, { "label": "Claude Opus 5.5", "icon": "sparkle" }, { "label": "Claude Sonnet 5.5", "icon": "sparkle" }, { "label": "GPT-6.1 Sol", "icon": "sparkle" }],
+				"loads": true,
+				"context": {
+					"project": "Cloud Sandbox · my-repo",
+					"groups": [
+						{ "label": "Cloud Sandbox", "icon": "cloud", "sessions": [
+							{ "title": "Run the unit tests", "time": "3 hours ago", "icon": "cloud", "selected": true },
+							{ "title": "Fix the flaky build", "time": "yesterday", "icon": "cloud" }] },
+						{ "label": "my-project", "icon": "folder", "sessions": [{ "title": "To-do Tagline", "time": "yesterday" }] }],
+					"prompt": "Run the unit tests and fix what fails.",
+					"reply": "All 214 tests pass now: the date parsing in utils/date.ts handled time zones wrong, and the fix is in." } } } },
+			"motion": { "sync": { "load": "model", "open": "back" } }
+		},
+		"10": {
+			"headline": "Find sessions by pull request number",
+			"eyebrow": "In the Agents window",
+			"say": "And find any session by its pull request number.",
+			"visual": { "scene": { "name": "sessions-find", "params": {
+				"query": "#241533",
+				"match": 1,
+				"sessions": [
+					{ "title": "Fix flaky terminal tests", "sub": "2 hours ago", "prompt": "Find out why the terminal tests are flaky and fix them." },
+					{ "title": "Welcome page sign-in", "sub": "yesterday", "pr": 241533, "prompt": "Offer GitHub sign-in on the Welcome page when signed out." },
+					{ "title": "Refactor quick pick", "sub": "2 days ago" },
+					{ "title": "Update telemetry docs", "sub": "3 days ago" }] } } },
+			"motion": { "sync": { "find": "find", "type": "session", "typed": "number" } }
+		}
+	}
+}

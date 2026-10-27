@@ -1,0 +1,88 @@
+{
+  "title": "VS Code Changelog · Oct 19, 2026",
+  "fps": 60,
+  "bpm": 120,
+  "scenes": [
+    {
+      "id": "logo",
+      "name": "Logo reveal",
+      "beats": 5
+    },
+    {
+      "id": "stream",
+      "name": "Stream · 49 pull requests",
+      "beats": 4
+    },
+    {
+      "id": "top",
+      "name": "The top 10",
+      "beats": 4
+    },
+    {
+      "id": "c1",
+      "name": "1 · #342442 Signed out? The Welcome page offers GitHub sign-in",
+      "beats": 10
+    },
+    {
+      "id": "c2",
+      "name": "2 · #342404 Session rows lead with New Nested Session",
+      "beats": 10
+    },
+    {
+      "id": "c3",
+      "name": "3 · #342455 The app icon now shows the badge",
+      "beats": 10
+    },
+    {
+      "id": "c4",
+      "name": "4 · #341230 /fork, with a title or with a prompt",
+      "beats": 10
+    },
+    {
+      "id": "c5",
+      "name": "5 · #342430 Plugin links that ask before they act",
+      "beats": 10
+    },
+    {
+      "id": "c6",
+      "name": "6 · #342440 Save a whole image batch as one ZIP",
+      "beats": 10
+    },
+    {
+      "id": "c7",
+      "name": "7 · #337719 Language Status says when diagnostics are cut",
+      "beats": 10
+    },
+    {
+      "id": "c8",
+      "name": "8 · #342370 Removed steering messages stay removed",
+      "beats": 10
+    },
+    {
+      "id": "c9",
+      "name": "9 · #342415 Cloud Sandbox sessions keep their model picker",
+      "beats": 10
+    },
+    {
+      "id": "c10",
+      "name": "10 · #338904 Find sessions by pull request number",
+      "beats": 10
+    },
+    {
+      "id": "end",
+      "name": "End card",
+      "beats": 5
+    }
+  ],
+  "music": {
+    "theme": "music/theme.wav",
+    "drop": {
+      "scene": "c1",
+      "beat": 0
+    },
+    "end": {
+      "scene": "end",
+      "beat": 4
+    }
+  }
+}

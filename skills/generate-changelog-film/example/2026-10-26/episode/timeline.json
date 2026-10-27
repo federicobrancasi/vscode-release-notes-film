@@ -1,0 +1,88 @@
+{
+  "title": "VS Code Changelog · Oct 26, 2026",
+  "fps": 60,
+  "bpm": 120,
+  "scenes": [
+    {
+      "id": "logo",
+      "name": "Logo reveal",
+      "beats": 5
+    },
+    {
+      "id": "stream",
+      "name": "Stream · 36 pull requests",
+      "beats": 4
+    },
+    {
+      "id": "top",
+      "name": "The top 10",
+      "beats": 4
+    },
+    {
+      "id": "c1",
+      "name": "1 · #344060 The agent can now design your chat background",
+      "beats": 10
+    },
+    {
+      "id": "c2",
+      "name": "2 · #344083 Shared environments get a Delete action",
+      "beats": 10
+    },
+    {
+      "id": "c3",
+      "name": "3 · #344158 Remote Environments management, on by default",
+      "beats": 11
+    },
+    {
+      "id": "c4",
+      "name": "4 · #344164 In the Agents window, diffs default to cards",
+      "beats": 10
+    },
+    {
+      "id": "c5",
+      "name": "5 · #344192 Cancel a connector while it connects",
+      "beats": 10
+    },
+    {
+      "id": "c6",
+      "name": "6 · #344092 Cloud models show their real context sizes",
+      "beats": 11
+    },
+    {
+      "id": "c7",
+      "name": "7 · #344133 Reviews of agent edits stay in sync",
+      "beats": 10
+    },
+    {
+      "id": "c8",
+      "name": "8 · #344175 Pull requests in a chat share one pill",
+      "beats": 11
+    },
+    {
+      "id": "c9",
+      "name": "9 · #344087 Relative links open from the chat's folder",
+      "beats": 11
+    },
+    {
+      "id": "c10",
+      "name": "10 · #344017 Steering HydraFusion no longer looks stuck",
+      "beats": 10
+    },
+    {
+      "id": "end",
+      "name": "End card",
+      "beats": 5
+    }
+  ],
+  "music": {
+    "theme": "music/theme.wav",
+    "drop": {
+      "scene": "c1",
+      "beat": 0
+    },
+    "end": {
+      "scene": "end",
+      "beat": 4
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+ "window": [
+  "2026-10-25T08:00:00Z",
+  "2026-10-26T08:30:00Z"
+ ],
+ "merged": [
+  {
+   "n": 344105,
+   "t": "ci: skip the macOS and Windows unit test jobs when the plan selects nothing",
+   "at": "2026-10-25T08:26:02Z"
+  },
+  {
+   "n": 344104,
+   "t": "ripple: count writes to pure globals as load-time effects",
+   "at": "2026-10-25T09:32:39Z"
+  },
+  {
+   "n": 344109,
+   "t": "pfs: make the realcase test assert on Windows",
+   "at": "2026-10-25T09:45:29Z"
+  },
+  {
+   "n": 344110,
+   "t": "ci: add a single PR Gate job for the Code OSS workflow",
+   "at": "2026-10-25T10:12:58Z"
+  },
+  {
+   "n": 344087,
+   "t": "agentHost: resolve relative links and show URL approval targets",
+   "at": "2026-10-25T10:23:53Z"
+  },
+  {
+   "n": 344088,
+   "t": "request: preserve response body timeout errors",
+   "at": "2026-10-25T10:24:16Z"
+  },
+  {
+   "n": 344090,
+   "t": "chat: preserve dynamic provider labels in session hovers",
+   "at": "2026-10-25T10:24:49Z"
+  },
+  {
+   "n": 344125,
+   "t": "ci: remove the required-checks job now that PR Gate is the required check",
+   "at": "2026-10-25T14:28:02Z"
+  },
+  {
+   "n": 344134,
+   "t": "ripple: drop the 50% limit and always run only the affected unit tests",
+   "at": "2026-10-25T14:29:48Z"
+  },
+  {
+   "n": 344083,
+   "t": "sessions: Delete user-shared environments from Remotes",
+   "at": "2026-10-25T14:30:02Z"
+  },
+  {
+   "n": 344108,
+   "t": "ci: skip macOS and Windows Browser unit jobs without browser tests, and report a failed ripple plan",
+   "at": "2026-10-25T15:10:54Z"
+  },
+  {
+   "n": 344145,
+   "t": "ci: run the chat-lib tests in one matrix job",
+   "at": "2026-10-25T16:09:46Z"
+  },
+  {
+   "n": 344060,
+   "t": "sessions: add appearance tools and chat background skill",
+   "at": "2026-10-25T16:56:09Z"
+  },
+  {
+   "n": 344143,
+   "t": "github: don't release response body readers in WebKit (deadlock)",
+   "at": "2026-10-25T17:05:58Z"
+  },
+  {
+   "n": 344146,
+   "t": "ci: run only the integration tests a change can affect on macOS and Windows",
+   "at": "2026-10-25T17:55:02Z"
+  },
+  {
+   "n": 344152,
+   "t": "ripple: add the overview video to the README",
+   "at": "2026-10-25T18:32:30Z"
+  },
+  {
+   "n": 344148,
+   "t": "ripple: depend on the content of files that root paths name, and add `ripple why`",
+   "at": "2026-10-25T20:16:04Z"
+  },
+  {
+   "n": 344135,
+   "t": "sessions: Surface remote connection errors and fix Remotes layout",
+   "at": "2026-10-25T20:41:55Z"
+  },
+  {
+   "n": 344017,
+   "t": "Agent Host: hand in-flight HydraFusion workflow to the steering turn",
+   "at": "2026-10-25T21:21:19Z"
+  },
+  {
+   "n": 344159,
+   "t": "Scope Agents window artifact and reference pills to the focused chat",
+   "at": "2026-10-25T21:23:39Z"
+  },
+  {
+   "n": 344158,
+   "t": "sessions: Enable and gate Remote Environments management",
+   "at": "2026-10-25T21:31:43Z"
+  },
+  {
+   "n": 344163,
+   "t": "sessions: dock the Session Activity Bar in a column of its own beside the chat",
+   "at": "2026-10-25T21:42:45Z"
+  },
+  {
+   "n": 344164,
+   "t": "Agents - default the multi diff editor to cards in the Agents window",
+   "at": "2026-10-25T22:10:12Z"
+  },
+  {
+   "n": 344160,
+   "t": "ci: fix the names of skipped PR checks",
+   "at": "2026-10-25T22:19:56Z"
+  },
+  {
+   "n": 344169,
+   "t": "sessions: Show each artifact once, only in the chat that recorded it",
+   "at": "2026-10-25T23:08:57Z"
+  },
+  {
+   "n": 344093,
+   "t": "chat: show response models for server-initiated turns",
+   "at": "2026-10-26T01:22:35Z"
+  },
+  {
+   "n": 344175,
+   "t": "sessions: group artifact pills that share an integration into a dropdown",
+   "at": "2026-10-26T01:23:27Z"
+  },
+  {
+   "n": 343422,
+   "t": "agentHost: re-enable MCP servers the host disabled when their decision is cleared",
+   "at": "2026-10-26T03:11:56Z"
+  },
+  {
+   "n": 344192,
+   "t": "chat: allow cancelling a pending connector connection from its detail page",
+   "at": "2026-10-26T03:29:16Z"
+  },
+  {
+   "n": 344194,
+   "t": "Agent Host: clean up dynamic Auto tiers settings to enable Copilot Fusion in picker",
+   "at": "2026-10-26T03:46:06Z"
+  },
+  {
+   "n": 344080,
+   "t": "Engineering - update node version in the build folder",
+   "at": "2026-10-26T04:03:32Z"
+  },
+  {
+   "n": 344133,
+   "t": "chat: fix Keep and Undo review synchronization",
+   "at": "2026-10-26T04:58:02Z"
+  },
+  {
+   "n": 343974,
+   "t": "Canvases: Add Canvas filter to customization marketplace",
+   "at": "2026-10-26T05:11:29Z"
+  },
+  {
+   "n": 344091,
+   "t": "chat: identify cloud sandbox input without relabeling remote hosts",
+   "at": "2026-10-26T05:50:25Z"
+  },
+  {
+   "n": 344207,
+   "t": "Canvases: Show canvas extensions in plugin results",
+   "at": "2026-10-26T07:29:54Z"
+  },
+  {
+   "n": 344092,
+   "t": "chat: fix Cloud model picker pricing and context selection",
+   "at": "2026-10-26T07:31:21Z"
+  }
+ ]
+}

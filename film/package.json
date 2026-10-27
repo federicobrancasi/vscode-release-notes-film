@@ -1,0 +1,42 @@
+{
+  "name": "changelog-film",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The daily VS Code changelog film: the top ten changes of a #changelog report, each shown in VS Code under a Liquid Glass lens, narrated, cut on the beat (Remotion).",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "merged": "node scripts/merged.mjs",
+    "lines": "node scripts/lines.mjs",
+    "episode": "node scripts/episode.mjs",
+    "timeline": "node scripts/timeline.mjs",
+    "music": "uv run --python 3.12 --with librosa==1.0.0 --with numpy==2.5.4 --with scipy==1.18.1 python scripts/fit_music.py",
+    "check": "node scripts/check.mjs",
+    "lint": "eslint src && tsc --noEmit",
+    "stills": "node scripts/stills.mjs",
+    "review": "node scripts/review.mjs",
+    "draft": "node scripts/draft.mjs",
+    "master": "bash scripts/master.sh",
+    "deliver": "node scripts/deliver.mjs",
+    "gallery": "node scripts/gallery.mjs",
+    "codicons": "node scripts/codicon-map.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/renderer": "4.0.534",
+    "@vscode/codicons": "^0.0.46-24",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.534",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "typescript": "5.7.3"
+  }
+}

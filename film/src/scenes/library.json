@@ -1,0 +1,698 @@
+{
+  "button-swap": {
+    "title": "Welcome page button",
+    "for": "A page whose button changes: the Welcome page's banner, a button in an empty view.",
+    "group": "oct19",
+    "events": {
+      "swap": "the label rolls from the old one to the new one"
+    },
+    "strings": [
+      "before.text",
+      "after.text"
+    ],
+    "example": {
+      "tab": "Welcome",
+      "before": {
+        "text": "Try out the new Agents window",
+        "icon": "agent"
+      },
+      "after": {
+        "text": "Sign in to GitHub",
+        "icon": "github"
+      }
+    }
+  },
+  "app-badge": {
+    "title": "Dock badge",
+    "for": "The app icon in the Mac's Dock with a count badge (sessions waiting, attention counts).",
+    "group": "oct19",
+    "events": {
+      "badge": "the badge pops in (then counts up once)"
+    },
+    "strings": [],
+    "example": {
+      "count": 2
+    }
+  },
+  "list-actions": {
+    "title": "Row actions",
+    "for": "A row whose actions change: a new hover action, a moved button, with its tooltip, clicked.",
+    "group": "oct19",
+    "events": {
+      "hover": "the pointer reaches the row's action",
+      "click": "the action is clicked"
+    },
+    "strings": [
+      "after.tooltip"
+    ],
+    "example": {
+      "rows": [
+        {
+          "label": "Image batch",
+          "sub": "4 images"
+        }
+      ],
+      "row": 0,
+      "after": {
+        "icon": "desktop-download",
+        "tooltip": "Download All Images as ZIP"
+      },
+      "images": [
+        "scenes/lighthouse-1.png",
+        "scenes/lighthouse-2.png",
+        "scenes/lighthouse-3.png",
+        "scenes/lighthouse-4.png"
+      ]
+    }
+  },
+  "picker": {
+    "title": "Picker",
+    "for": "A picker in the chat input (models, modes; with of: agent, the agent picker): its entries, the current one checked; with loads, a picker that's back; with details, a model's Details (its settings as segmented controls), an option picked.",
+    "group": "oct19",
+    "events": {
+      "load": "with loads: the button appears",
+      "open": "the picker opens",
+      "details": "with details: the current model's Details replace the list",
+      "pick": "with details: the option of the section with pick is clicked"
+    },
+    "strings": [
+      "items[isNew].label",
+      "items[disabled].description",
+      "details.sections[].title",
+      "details.sections[].value"
+    ],
+    "example": {
+      "button": {
+        "label": "Claude Opus 5.5"
+      },
+      "items": [
+        {
+          "label": "Auto"
+        },
+        {
+          "label": "Claude Opus 5.5"
+        },
+        {
+          "label": "Claude Sonnet 5.5"
+        },
+        {
+          "label": "GPT-6.1 Sol"
+        }
+      ],
+      "loads": true
+    }
+  },
+  "queued-message": {
+    "title": "Queued message",
+    "for": "A message queued while the agent works: removed (or sent, edited), and what the agent does then.",
+    "group": "oct19",
+    "events": {
+      "remove": "its remove button is clicked",
+      "done": "the agent finishes"
+    },
+    "strings": [
+      "action"
+    ],
+    "example": {
+      "message": "Also add a test for the empty state",
+      "action": "Remove from Queue"
+    }
+  },
+  "sessions-find": {
+    "title": "Find a session",
+    "for": "Finding in the Sessions list: Find opens, the query is typed, the list filters to the match, and it opens.",
+    "group": "oct19",
+    "events": {
+      "find": "Find opens",
+      "type": "the typing starts",
+      "typed": "the typing ends and the list filters"
+    },
+    "strings": [],
+    "example": {
+      "query": "#241533",
+      "match": 1,
+      "sessions": [
+        {
+          "title": "Fix flaky terminal tests",
+          "sub": "2 hours ago",
+          "prompt": "Find out why the terminal tests are flaky and fix them."
+        },
+        {
+          "title": "Welcome page sign-in",
+          "sub": "yesterday",
+          "pr": 241533,
+          "prompt": "Offer GitHub sign-in on the Welcome page when signed out."
+        },
+        {
+          "title": "Refactor quick pick",
+          "sub": "2 days ago"
+        },
+        {
+          "title": "Update telemetry docs",
+          "sub": "3 days ago"
+        }
+      ]
+    }
+  },
+  "slash-menu": {
+    "title": "Slash command",
+    "for": "A slash command in the chat input and its suggestions: a new command, a new form of one.",
+    "group": "engine",
+    "events": {
+      "type": "the typing starts",
+      "select": "the selection moves to the new entry"
+    },
+    "strings": [
+      "entries[isNew].label",
+      "entries[isNew].description"
+    ],
+    "example": {
+      "typed": "/fork",
+      "entries": [
+        {
+          "label": "/fork",
+          "description": "Fork the conversation into a new session"
+        },
+        {
+          "label": "/fork <title>",
+          "description": "Fork it with a title",
+          "isNew": true
+        },
+        {
+          "label": "/fork prompt <prompt>",
+          "description": "Fork it and send a prompt",
+          "isNew": true
+        }
+      ]
+    }
+  },
+  "dialog": {
+    "title": "Dialog",
+    "for": "A modal dialog: a confirmation, a warning, a permission prompt, a setup's steps (rows). Its new sentence lights; its primary button is clicked.",
+    "group": "engine",
+    "events": {
+      "show": "it opens",
+      "highlight": "the **marked** sentence lights",
+      "click": "the primary button is pressed and the dialog closes (only on its word: without one, the pointer rests on the button)",
+      "act": "with rows: the current row's primary action is clicked (the dialog stays)"
+    },
+    "strings": [
+      "title",
+      "detail",
+      "buttons[primary].label",
+      "rows[].label",
+      "rowActions[]"
+    ],
+    "example": {
+      "icon": "shield",
+      "title": "Install the plugin \"Release Notes\" from the marketplace?",
+      "detail": "It was requested by a link. **Plugins can run code on your machine.**",
+      "buttons": [
+        {
+          "label": "Cancel"
+        },
+        {
+          "label": "Install",
+          "primary": true
+        }
+      ]
+    }
+  },
+  "setting": {
+    "title": "Setting",
+    "for": "A setting: a default the PR changes (before → after, flipping by itself), a new setting, a new description; with window: agents, the Agents window's Settings modal.",
+    "group": "engine",
+    "events": {
+      "flip": "the value changes to the new default"
+    },
+    "strings": [
+      "id",
+      "description"
+    ],
+    "example": {
+      "id": "chat.welcomePage.signIn.enabled",
+      "description": "Show the GitHub sign-in button on the Welcome page when you are signed out.",
+      "before": false,
+      "after": true
+    }
+  },
+  "command-palette": {
+    "title": "Command Palette",
+    "for": "A new or renamed command, or a new keybinding: typed in the Command Palette, the new one selected.",
+    "group": "engine",
+    "events": {
+      "type": "the typing starts",
+      "select": "the selection moves to the new command"
+    },
+    "strings": [
+      "items[isNew].label"
+    ],
+    "example": {
+      "query": "Chat: Fork",
+      "items": [
+        {
+          "label": "Chat: Fork Conversation"
+        },
+        {
+          "label": "Chat: Fork Conversation with Title",
+          "isNew": true
+        },
+        {
+          "label": "Chat: Fork Conversation and Send",
+          "isNew": true
+        }
+      ]
+    }
+  },
+  "notification": {
+    "title": "Notification",
+    "for": "A notification toast: a new or changed message, new actions.",
+    "group": "engine",
+    "events": {
+      "show": "it slides in",
+      "click": "its first action is pressed and the toast goes (only on its word: without one, the pointer rests on it)"
+    },
+    "strings": [
+      "message",
+      "actions[]"
+    ],
+    "example": {
+      "severity": "info",
+      "message": "A new version of the extension is available. Restart the extension host to use it.",
+      "source": "Source: Extensions",
+      "actions": [
+        "Restart Extensions",
+        "Later"
+      ]
+    }
+  },
+  "editor": {
+    "title": "Editor",
+    "for": "Text appearing at the cursor (pasted, inserted by a command): the PR's own example.",
+    "group": "engine",
+    "events": {
+      "insert": "the text appears"
+    },
+    "strings": [
+      "insert"
+    ],
+    "example": {
+      "file": "notes.md",
+      "lines": [
+        "# Release checklist",
+        "",
+        "- Update the changelog",
+        "- Tag the release",
+        ""
+      ],
+      "insert": "- Announce it in the team channel\n- Close the milestone"
+    }
+  },
+  "card": {
+    "title": "Card",
+    "for": "No UI to show (a default behind the scenes, a fix that leaves the UI as it was): the change in words, as release notes.",
+    "group": "engine",
+    "events": {
+      "show": "its lines appear, one by one"
+    },
+    "strings": [
+      "lines[mono].text"
+    ],
+    "example": {
+      "icon": "rocket",
+      "title": "Faster startup on large workspaces",
+      "lines": [
+        {
+          "text": "Files are indexed in the background"
+        },
+        {
+          "text": "search.indexing.background",
+          "mono": true
+        }
+      ]
+    }
+  },
+  "policy": {
+    "title": "Policy",
+    "for": "A setting your organization manages (an enterprise policy): VS Code's indicator, and its hover.",
+    "group": "new",
+    "events": {
+      "hover": "the pointer reaches the indicator and its hover opens"
+    },
+    "strings": [
+      "id",
+      "description",
+      "policyDescription"
+    ],
+    "example": {
+      "id": "chat.agent.enabled",
+      "description": "Enable agent mode for chat. When enabled, agent mode can be activated via the dropdown in the view.",
+      "value": false
+    }
+  },
+  "windows": {
+    "title": "Windows",
+    "for": "VS Code on Windows (another OS): its taskbar tile's badge, its jump list; or a terminal whose app's window (a sign-in) opens in front of VS Code.",
+    "group": "new",
+    "events": {
+      "badge": "the taskbar badge appears",
+      "open": "the jump list opens",
+      "prompt": "with prompt: the terminal app's window opens in front of VS Code"
+    },
+    "strings": [
+      "tasks[]"
+    ],
+    "example": {
+      "count": 2,
+      "tasks": [
+        "New Window",
+        "New Agents Window"
+      ],
+      "recent": [
+        "my-project",
+        "docs-site",
+        "api-server"
+      ]
+    }
+  },
+  "web": {
+    "title": "VS Code for the Web",
+    "for": "VS Code in a browser (another platform): vscode.dev, a tunnel, what the page shows once connected.",
+    "group": "new",
+    "events": {
+      "connect": "it connects: the remote indicator says where"
+    },
+    "strings": [],
+    "example": {
+      "url": "vscode.dev/tunnel/my-machine/home/me/my-project",
+      "connected": "Tunnel: my-machine",
+      "focus": "status"
+    }
+  },
+  "system-notification": {
+    "title": "System notification",
+    "for": "A notification from the OS, outside VS Code's window (a session needs your input while you're elsewhere).",
+    "group": "new",
+    "events": {
+      "show": "the banner slides in",
+      "click": "its action is clicked and the banner goes (only on its word: without one, the pointer rests on it)"
+    },
+    "strings": [
+      "message",
+      "actions[]"
+    ],
+    "example": {
+      "message": "A session needs your input: \"Add an empty state\"",
+      "actions": [
+        "Open"
+      ]
+    }
+  },
+  "sign-in": {
+    "title": "Sign-in",
+    "for": "A sign-in the build can't do on camera, told in the Accounts menu: its sign-in entry, picked, then signed in.",
+    "group": "new",
+    "events": {
+      "menu": "the Accounts menu opens",
+      "pick": "the sign-in entry is picked: signed in"
+    },
+    "strings": [
+      "item"
+    ],
+    "example": {
+      "provider": "GitHub",
+      "item": "Sign in with GitHub to use GitHub Copilot",
+      "account": "my-account"
+    }
+  },
+  "extension": {
+    "title": "Extension",
+    "for": "An extension (the Marketplace, the network): searched for, its page, verified publisher, installed.",
+    "group": "new",
+    "events": {
+      "search": "the typing starts",
+      "install": "Install is clicked"
+    },
+    "strings": [
+      "badge"
+    ],
+    "example": {
+      "query": "release notes",
+      "name": "Release Notes Helper",
+      "publisher": "release-tools",
+      "description": "Write release notes from your merged pull requests.",
+      "icon": "notebook"
+    }
+  },
+  "remote": {
+    "title": "Remote",
+    "for": "A remote window (SSH, a tunnel, a container): the remote indicator's options, one picked, connected.",
+    "group": "new",
+    "events": {
+      "open": "the remote indicator is clicked",
+      "connect": "the option is picked and the window connects (only on its word: without one, the selection rests on it)"
+    },
+    "strings": [
+      "pick"
+    ],
+    "example": {
+      "items": [
+        {
+          "label": "Connect to Tunnel...",
+          "description": "Remote - Tunnels",
+          "icon": "remote-explorer"
+        },
+        {
+          "label": "Connect to Host...",
+          "description": "Remote - SSH",
+          "icon": "remote"
+        },
+        {
+          "label": "Reopen in Container",
+          "description": "Dev Containers",
+          "icon": "vm"
+        }
+      ],
+      "pick": "Connect to Tunnel...",
+      "connected": "Tunnel: my-machine"
+    }
+  },
+  "tool-approval": {
+    "title": "Tool approval",
+    "for": "The agent asking before it runs something (a model and credits): its question, Allow's options, the result.",
+    "group": "new",
+    "events": {
+      "ask": "the confirmation appears",
+      "allow": "the option is picked"
+    },
+    "strings": [
+      "options[]"
+    ],
+    "example": {
+      "title": "Run command in terminal?",
+      "command": "npm test",
+      "options": [
+        "Allow Once",
+        "Allow in this Session",
+        "Always Allow"
+      ],
+      "pick": "Allow in this Session"
+    }
+  },
+  "debug": {
+    "title": "Debugger",
+    "for": "Debugging (a runtime): paused at a breakpoint, Variables, a step with its value inline.",
+    "group": "new",
+    "events": {
+      "pause": "it stops at the breakpoint",
+      "step": "Step Over"
+    },
+    "strings": [],
+    "example": {
+      "file": "cart.js",
+      "breakpoint": 4,
+      "inline": "sum = 18"
+    }
+  },
+  "update": {
+    "title": "Update",
+    "for": "An update (Stable's update channel): the Manage gear's badge, Restart to Update, the release notes.",
+    "group": "new",
+    "events": {
+      "badge": "the gear's badge pops",
+      "restart": "Restart to Update is clicked and the release notes open (only on its word: without one, the pointer rests on it)"
+    },
+    "strings": [],
+    "example": {
+      "version": "1.145",
+      "notes": [
+        "Agents window: nested sessions",
+        "Chat: fork a conversation with a title",
+        "Settings: a policy indicator you can hover"
+      ]
+    }
+  },
+  "sessions-organize": {
+    "title": "Organize sessions",
+    "for": "An agent organizing the Sessions list: its tool lines in chat, then sessions pinned and archived in the list.",
+    "group": "new",
+    "events": {
+      "read": "it reads the list",
+      "organize": "it starts organizing",
+      "done": "the list changes"
+    },
+    "strings": [
+      "reading",
+      "read",
+      "organized"
+    ],
+    "example": {
+      "sessions": [
+        {
+          "title": "Welcome page sign-in",
+          "time": "yesterday"
+        },
+        {
+          "title": "Fix flaky terminal tests",
+          "time": "2 hours ago"
+        },
+        {
+          "title": "Refactor quick pick",
+          "time": "2 days ago"
+        },
+        {
+          "title": "Update telemetry docs",
+          "time": "3 weeks ago"
+        }
+      ],
+      "pin": [
+        "Welcome page sign-in"
+      ],
+      "archive": [
+        "Update telemetry docs"
+      ]
+    }
+  },
+  "sessions-rename": {
+    "title": "Rename a group",
+    "for": "A Sessions group renamed in place: the new name typed in its rename box, the list refreshing under it while the draft stays.",
+    "group": "new",
+    "events": {
+      "type": "the typing starts",
+      "refresh": "the list refreshes (a session arrives): the draft stays"
+    },
+    "strings": [],
+    "example": {
+      "group": "Docs",
+      "draft": "Docs and samples",
+      "sessions": [
+        {
+          "title": "Update the README",
+          "time": "1 hour ago"
+        },
+        {
+          "title": "Add a code sample",
+          "time": "yesterday"
+        }
+      ],
+      "arrives": {
+        "title": "Fix a broken link",
+        "time": "now"
+      }
+    }
+  },
+  "remote-environments": {
+    "title": "Remote Environments",
+    "for": "The Agents window's Remote Environments (the network, a sign-in): a group's refresh ends in a prompt with its action link, clicked; with rows, a group's remotes, a row's actions on hover, and what its Delete asks.",
+    "group": "new",
+    "events": {
+      "show": "the group's refresh ends and its prompt shows",
+      "click": "the action link is clicked: a spinner beside it (only on its word: without one, the pointer rests on it); with rows, Delete is clicked and its confirmation opens",
+      "hover": "with rows: the pointer reaches the row and its actions show"
+    },
+    "strings": [
+      "label",
+      "action",
+      "remove.title",
+      "remove.detail",
+      "remove.button"
+    ],
+    "example": {
+      "group": "Tunnels",
+      "label": "Sign in to allow access to your tunnels.",
+      "action": "Sign In",
+      "docs": "Remote Tunnels Guide",
+      "above": [
+        {
+          "label": "SSH",
+          "empty": "No SSH hosts configured.",
+          "description": "Use the SSH settings action to add a host.",
+          "docs": "SSH Setup Guide"
+        }
+      ]
+    }
+  },
+  "connector": {
+    "title": "Connector",
+    "for": "A Copilot connector's page in Customizations > Browse (an authorization on the account): Connect turns into the disabled Connecting... with Cancel beside it; Cancel is clicked, and Connect is back.",
+    "group": "new",
+    "events": {
+      "connect": "Connect is clicked: Connecting... (disabled) and Cancel show",
+      "cancel": "Cancel is clicked: Connect is back"
+    },
+    "strings": [
+      "cancel"
+    ],
+    "example": {
+      "name": "Release Notes Feed",
+      "publisher": "GitHub Copilot",
+      "description": "Read and search the release notes of your projects.",
+      "icon": "notebook",
+      "color": "#7a5af8",
+      "type": "MCP server",
+      "source": "Copilot Connectors",
+      "connecting": "Connecting...",
+      "cancel": "Cancel"
+    }
+  },
+  "artifact-group": {
+    "title": "Artifact group",
+    "for": "A chat's artifacts of one integration in one pill above the chat input (several pull requests): the pill, its dropdown opened, a row's actions on hover.",
+    "group": "new",
+    "events": {
+      "open": "the pill is clicked: its dropdown opens",
+      "hover": "the pointer reaches the first row: its actions show"
+    },
+    "strings": [
+      "label"
+    ],
+    "example": {
+      "label": "Pull Requests",
+      "items": [
+        {
+          "number": 1204,
+          "title": "Fix the date parsing",
+          "state": "failing",
+          "checks": "2/3"
+        },
+        {
+          "number": 1203,
+          "title": "Add an empty state",
+          "state": "open",
+          "checks": "3/3",
+          "comments": "2"
+        },
+        {
+          "number": 1201,
+          "title": "Add a code sample",
+          "state": "draft"
+        },
+        {
+          "number": 1198,
+          "title": "Rename the settings page",
+          "state": "merged"
+        }
+      ]
+    }
+  }
+}

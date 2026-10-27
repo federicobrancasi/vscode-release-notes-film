@@ -1,0 +1,143 @@
+{
+	"intro": "Thirty-six changes in a single day. Here are ten you'll notice.",
+	"changes": {
+		"1": {
+			"headline": "The agent can now design your chat background",
+			"eyebrow": "In the Agents window",
+			"say": "A built-in skill now generates your chat background.",
+			"visual": { "demo": "c1" },
+			"motion": { "loupe": { "block": [285, 388, 640, 106] } }
+		},
+		"2": {
+			"headline": "Shared environments get a Delete action",
+			"eyebrow": "Remote Environments",
+			"say": "Shared environments now offer Delete, and it asks you first.",
+			"visual": { "scene": { "name": "remote-environments", "params": {
+				"group": "Environments",
+				"rows": [{ "label": "my-devbox", "connection": "Connected" }, { "label": "build-server", "connection": "Offline" }],
+				"row": 0,
+				"remove": {
+					"title": "Are you sure you want to delete environment 'my-devbox'?",
+					"detail": "This removes the environment registration and disconnects this client. Files on the machine will not be deleted. The environment may reappear if its owning application registers it again.",
+					"button": "Delete" } } } },
+			"motion": { "sync": { "click": "Delete" } }
+		},
+		"3": {
+			"headline": "Remote Environments management, on by default",
+			"eyebrow": "In the Sessions menu",
+			"say": "Manage Remote Environments is now on by default, in the Sessions menu.",
+			"visual": { "demo": "c3" },
+			"motion": { "loupe": { "block": [4, 40, 552, 158] } }
+		},
+		"4": {
+			"headline": "In the Agents window, diffs default to cards",
+			"eyebrow": "Multi-file diffs",
+			"say": "In the Agents window, the multi diff editor now defaults to cards.",
+			"visual": { "scene": { "name": "setting", "params": {
+				"id": "multiDiffEditor.experimental.variant",
+				"description": "Controls the experimental variant of the multi diff editor.",
+				"kind": "dropdown",
+				"before": "noCards",
+				"after": "cards",
+				"window": "agents" } } },
+			"motion": { "sync": { "flip": "cards" } }
+		},
+		"5": {
+			"headline": "Cancel a connector while it connects",
+			"eyebrow": "Copilot connectors",
+			"say": "While a connector connects, its page now offers Cancel.",
+			"visual": { "scene": { "name": "connector", "params": {
+				"name": "Azure Data Explorer",
+				"publisher": "GitHub Copilot",
+				"description": "Run Kusto queries and explore data in Azure Data Explorer.",
+				"icon": "database",
+				"color": "#1c6fb8",
+				"type": "MCP server",
+				"source": "Copilot Connectors",
+				"connecting": "Connecting...",
+				"cancel": "Cancel" } } },
+			"motion": { "sync": { "connect": "connects", "cancel": "Cancel" } }
+		},
+		"6": {
+			"headline": "Cloud models show their real context sizes",
+			"eyebrow": "Cloud chat model picker",
+			"say": "In Cloud chats, a model's Details now show its real context sizes.",
+			"visual": { "scene": { "name": "picker", "params": {
+				"button": { "label": "GPT-6.1 Sol" },
+				"items": [{ "label": "Auto" }, { "label": "Claude Opus 5.5", "description": "Medium · 1M" }, { "label": "Claude Sonnet 5.5", "description": "High · 1M" }, { "label": "GPT-6.1 Sol" }],
+				"tool": false,
+				"details": {
+					"model": "GPT-6.1 Sol",
+					"sections": [
+						{ "title": "Effort Level", "value": "Model default", "options": ["Low", "Medium", "High"] },
+						{ "title": "Context Size", "options": ["272K", "1M"], "selected": 0, "pick": 1 }] },
+				"context": {
+					"project": "Cloud · my-repo",
+					"groups": [
+						{ "label": "Cloud", "icon": "cloud", "sessions": [
+							{ "title": "Summarize the release notes", "time": "now", "icon": "cloud", "selected": true }] },
+						{ "label": "my-project", "icon": "folder", "sessions": [{ "title": "To-do Tagline", "time": "yesterday" }] }],
+					"prompt": "Summarize the release notes in the docs folder.",
+					"reply": "" } } } },
+			"motion": { "sync": { "details": "Details", "pick": "sizes" } }
+		},
+		"7": {
+			"headline": "Reviews of agent edits stay in sync",
+			"eyebrow": "Keep and Undo",
+			"say": "Reviews of agent edits now stay in sync with Keep and Undo.",
+			"visual": { "scene": { "name": "card", "params": {
+				"icon": "diff-multiple",
+				"title": "Reviews of agent edits stay in sync",
+				"lines": [
+					{ "text": "Open diffs follow the agent's later edits." },
+					{ "text": "Keep and Undo take effect before the next file opens." },
+					{ "text": "Restoring a checkpoint keeps your unsaved edits." }] } } },
+			"motion": { "sync": { "show": "sync" } }
+		},
+		"8": {
+			"headline": "Pull requests in a chat share one pill",
+			"eyebrow": "Above the chat input",
+			"say": "Pull requests now share one pill; its dropdown lists each one.",
+			"visual": { "scene": { "name": "artifact-group", "params": {
+				"label": "Pull Requests",
+				"items": [
+					{ "number": 1204, "title": "Fix the date parsing", "state": "failing", "checks": "2/3" },
+					{ "number": 1203, "title": "Add an empty state", "state": "open", "checks": "3/3", "comments": "2" },
+					{ "number": 1202, "title": "Update the README", "state": "open", "checks": "3/3" },
+					{ "number": 1201, "title": "Add a code sample", "state": "draft" },
+					{ "number": 1198, "title": "Rename the settings page", "state": "merged" }],
+				"context": {
+					"project": "my-project",
+					"groups": [{ "label": "my-project", "icon": "folder", "sessions": [
+						{ "title": "Ship the date fixes", "time": "now", "selected": true },
+						{ "title": "To-do Tagline", "time": "yesterday" }] }],
+					"prompt": "Open a pull request for each fix.",
+					"reply": "I opened five pull requests, one per fix." } } } },
+			"motion": { "sync": { "open": "dropdown" } }
+		},
+		"9": {
+			"headline": "Relative links open from the chat's folder",
+			"eyebrow": "Agent Host chats",
+			"say": "Relative links in agent replies now open from the chat's working directory.",
+			"visual": { "scene": { "name": "card", "params": {
+				"icon": "link",
+				"title": "Relative links open from the chat's folder",
+				"lines": [
+					{ "text": "Relative file links open against the chat's working directory, in history too." },
+					{ "text": "URL approvals show the URL before you approve." }] } } },
+			"motion": { "sync": { "show": "open" } }
+		},
+		"10": {
+			"headline": "Steering HydraFusion no longer looks stuck",
+			"eyebrow": "HydraFusion",
+			"say": "And steering a running HydraFusion phase no longer looks stuck.",
+			"visual": { "scene": { "name": "card", "params": {
+				"icon": "comment-discussion",
+				"title": "Steering HydraFusion no longer looks stuck",
+				"lines": [
+					{ "text": "A steering message takes over the running workflow." },
+					{ "text": "The running phase shows again, and its tool calls keep appearing." }] } } },
+			"motion": { "sync": { "show": "phase" } }
+		}
+	}
+}

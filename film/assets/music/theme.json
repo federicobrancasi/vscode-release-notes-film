@@ -1,0 +1,10 @@
+{
+  "comment": "The film's theme: an original instrumental made for it with ACE-Step, 120 BPM, D major, 84 s. drop: where its drop is, in seconds (the fit lands it on the first change).",
+  "drop": 9.91,
+  "bpm": 120,
+  "key": "D Major",
+  "duration": 84,
+  "model": "acestep-5Hz-lm-4B",
+  "prompt": "Cinematic electronic instrumental: a tight pulsing synth bass, big punchy drums that build, soaring warm pads and a bright lead motif, hits on the downbeats, modern keynote product film, 120 BPM, no vocals.",
+  "seed": "856374108,2620621776"
+}

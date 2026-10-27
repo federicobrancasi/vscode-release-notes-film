@@ -1,0 +1,257 @@
+{
+	"intro": "One hundred thirty-eight changes in a single day. Here are ten you'll notice.",
+	"changes": {
+		"1": {
+			"headline": "Share this machine as a GitHub environment",
+			"eyebrow": "Remote agent hosts",
+			"say": "Share this machine as a GitHub environment, now on by default.",
+			"visual": {
+				"demo": "c1"
+			},
+			"motion": {
+				"loupe": {
+					"block": [
+						343,
+						148,
+						646,
+						136
+					]
+				}
+			}
+		},
+		"2": {
+			"headline": "Voice Mode can answer how your sessions are going",
+			"eyebrow": "OpenAI BYOK Voice Mode",
+			"say": "Voice Mode can now tell you how your sessions are going.",
+			"visual": {
+				"demo": "c2"
+			},
+			"motion": {
+				"loupe": {
+					"block": [
+						343,
+						148,
+						646,
+						191
+					]
+				}
+			}
+		},
+		"3": {
+			"headline": "Terminal sign-ins open in front of VS Code",
+			"eyebrow": "Terminal on Windows",
+			"say": "On Windows, a terminal's sign-in prompt now opens in front.",
+			"visual": {
+				"scene": {
+					"name": "windows",
+					"params": {
+						"terminal": [
+							"PS C:\\my-project> Connect-AzAccount",
+							"Opening the sign-in window..."
+						],
+						"prompt": {
+							"title": "Sign in",
+							"message": "Pick an account to continue.",
+							"account": "me@example.com",
+							"buttons": [
+								"Continue",
+								"Cancel"
+							]
+						}
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"prompt": "sign-in"
+				}
+			}
+		},
+		"4": {
+			"headline": "Agent Host moves to Copilot SDK 1.0.26",
+			"eyebrow": "Agent Host",
+			"say": "Agent Host moves to the newest Copilot SDK.",
+			"visual": {
+				"scene": {
+					"name": "card",
+					"params": {
+						"icon": "package",
+						"title": "Copilot SDK 1.0.26",
+						"lines": [
+							{
+								"text": "Runtime 1.0.103"
+							},
+							{
+								"text": "Session export stays with the Copilot extension"
+							},
+							{
+								"text": "Generated images are saved to disk"
+							}
+						]
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"show": "Copilot"
+				}
+			}
+		},
+		"5": {
+			"headline": "Turn a tool off once: it's off everywhere",
+			"eyebrow": "MCP servers and plugins",
+			"say": "Switch off an MCP server once, and it's off everywhere.",
+			"visual": {
+				"scene": {
+					"name": "card",
+					"params": {
+						"icon": "plug",
+						"title": "On and off, everywhere",
+						"lines": [
+							{
+								"text": "MCP servers, plugins and tool sets"
+							},
+							{
+								"text": "Across your windows and profiles"
+							},
+							{
+								"text": "When they differ, off wins"
+							}
+						]
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"show": "once"
+				}
+			}
+		},
+		"6": {
+			"headline": "A new layout for starting a session",
+			"eyebrow": "In the Agents window",
+			"say": "Starting a session gets a new composer, on by default.",
+			"visual": {
+				"demo": "c6"
+			},
+			"motion": {
+				"loupe": {
+					"block": [
+						315,
+						285,
+						625,
+						210
+					]
+				}
+			}
+		},
+		"7": {
+			"headline": "Agents can organize your Sessions list",
+			"eyebrow": "In the Agents window",
+			"say": "Ask the agent to tidy your Sessions list, and it does.",
+			"visual": {
+				"scene": {
+					"name": "sessions-organize",
+					"params": {
+						"pin": [
+							"Welcome page sign-in"
+						],
+						"archive": [
+							"Update telemetry docs"
+						],
+						"context": {
+							"prompt": "Pin the Welcome page session and archive the old ones."
+						}
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"read": "agent",
+					"organize": "tidy",
+					"done": "does"
+				}
+			}
+		},
+		"8": {
+			"headline": "Voice Mode steers the work in progress",
+			"eyebrow": "Voice Mode",
+			"say": "Speak while the agent works, and Voice Mode steers it.",
+			"visual": {
+				"scene": {
+					"name": "card",
+					"params": {
+						"icon": "mic",
+						"title": "Spoken requests steer the agent",
+						"lines": [
+							{
+								"text": "No waiting in the queue"
+							},
+							{
+								"text": "Forms ask one question at a time"
+							}
+						]
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"show": "steers"
+				}
+			}
+		},
+		"9": {
+			"headline": "Computer Use setup, one permission at a time",
+			"eyebrow": "Computer Use on macOS",
+			"say": "Computer Use setup now asks for one permission at a time.",
+			"visual": {
+				"scene": {
+					"name": "dialog",
+					"params": {
+						"icon": "shield",
+						"title": "Set Up Computer Use",
+						"buttons": [],
+						"rows": [
+							{
+								"label": "Accessibility",
+								"current": true
+							},
+							{
+								"label": "Screen Recording"
+							}
+						],
+						"rowActions": [
+							"Check Again",
+							"Allow in Settings"
+						]
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"act": "asks"
+				}
+			}
+		},
+		"10": {
+			"headline": "MCP allowlists check commands before names",
+			"eyebrow": "Organization policy",
+			"say": "Your organization's MCP allowlist now checks commands before server names.",
+			"visual": {
+				"scene": {
+					"name": "notification",
+					"params": {
+						"severity": "error",
+						"message": "This Model Context Protocol server is not in the list of servers allowed by your organization. A name entry matches, but this allowlist contains command entries, so the server must match an allowed command and arguments. Please contact your administrator for more information.",
+						"actions": []
+					}
+				}
+			},
+			"motion": {
+				"sync": {
+					"show": "MCP"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+changelog-film includes or depends on the following. Their licences are in film/public/fonts/licenses/ or as noted.
+
+Fonts (film/public/fonts)
+- Mona Sans and Monaspace Neon, GitHub: SIL Open Font License 1.1
+- Inter, Rasmus Andersson: SIL Open Font License 1.1
+- JetBrains Mono, JetBrains: SIL Open Font License 1.1
+- Cascadia Code, Microsoft: SIL Open Font License 1.1
+- codicon.ttf and the codicon map, @vscode/codicons (Microsoft): Creative Commons Attribution 4.0 (the icons) and MIT
+  (the code)
+
+Images
+- The VS Code icon (film/public/brand/vscode.svg), Microsoft: used whole and unaltered, as the brand guidelines ask
+  (code.visualstudio.com/brand).
+- The merge icon in film/src/kit/Ground.tsx: Fluent UI System Icons, Microsoft, MIT.
+- film/public/scenes/lighthouse-*.png: example images for the list-actions scene, generated for this film.
+- film/public/fx/grain-*.png: film grain tiles, generated for this film.
+- Every app, page, desktop and icon the scenes draw is an original drawing; there are no third-party logos.
+
+Sound
+- film/assets/music/theme.flac: an original instrumental made for this film with ACE-Step
+  (film/assets/music/theme.json has its prompt and seeds).
+- film/public/sfx/*.wav: sound effects synthesized for this film.
+
+Example (skills/generate-changelog-film/example/2026-10-19)
+- The recordings are of VS Code Insiders; the narration is MAI-Voice-2 (Azure AI Speech).
+
+Software
+- Remotion (remotion.dev): the film renders with Remotion, which is free for individuals and small teams and needs a
+  company licence otherwise (remotion.dev/license).
+- The changelog-videos plugin (vscode-team-kit, MIT): its engine makes the projects, recordings and narration; this
+  repo's setup copies and patches it locally and never changes the plugin.

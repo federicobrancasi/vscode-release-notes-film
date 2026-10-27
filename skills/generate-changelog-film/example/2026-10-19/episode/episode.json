@@ -1,0 +1,872 @@
+{
+ "date": "2026-10-19",
+ "dateLong": "Monday, October 19, 2026",
+ "dateShort": "Oct 19, 2026",
+ "build": {
+  "name": "Visual Studio Code - Insiders",
+  "version": "1.144.0-insider"
+ },
+ "merged": {
+  "window": [
+   "2026-10-18T08:00:00Z",
+   "2026-10-19T08:30:00Z"
+  ],
+  "items": [
+   {
+    "n": 342371,
+    "t": "chat: reuse measured heights for persistent progress",
+    "at": "2026-10-18T08:35:16Z"
+   },
+   {
+    "n": 342353,
+    "t": "test: abort stalled browser unit test runs with in-flight test diagnostics",
+    "at": "2026-10-18T08:45:50Z"
+   },
+   {
+    "n": 342355,
+    "t": "git: drop pending check-ignore work when a repository closes (fix flaky stack operations tests)",
+    "at": "2026-10-18T08:54:36Z"
+   },
+   {
+    "n": 342367,
+    "t": "github: migrate browser plugin downloads to shared clients",
+    "at": "2026-10-18T10:06:07Z"
+   },
+   {
+    "n": 342351,
+    "t": "window: let an unresponsive extension test window recover before failing the run",
+    "at": "2026-10-18T11:58:14Z"
+   },
+   {
+    "n": 342350,
+    "t": "agentHost: fix flaky subagent restore test in Session storage identity compatibility (Windows SQLITE_BUSY)",
+    "at": "2026-10-18T11:58:35Z"
+   },
+   {
+    "n": 342391,
+    "t": "sessions: keep sticky approval rows from growing the session row",
+    "at": "2026-10-18T13:32:27Z"
+   },
+   {
+    "n": 338210,
+    "t": "sessions: Stabilize approval row height during sticky scrolling",
+    "at": "2026-10-18T13:32:30Z"
+   },
+   {
+    "n": 342346,
+    "t": "test: run Agent Host E2E as its own test unit in GitHub Actions and ADO",
+    "at": "2026-10-18T14:28:58Z"
+   },
+   {
+    "n": 342332,
+    "t": "configuration: restore the configuration registry after the tests that empty it",
+    "at": "2026-10-18T14:32:59Z"
+   },
+   {
+    "n": 342270,
+    "t": "agentHost: don't fail createSession when the sessions_v2 import registers its catalog first",
+    "at": "2026-10-18T16:11:21Z"
+   },
+   {
+    "n": 342396,
+    "t": "agents: remove the reveal current session experiment",
+    "at": "2026-10-18T16:26:25Z"
+   },
+   {
+    "n": 342323,
+    "t": "agentHost: preserve archived legacy sessions during migration",
+    "at": "2026-10-18T16:40:57Z"
+   },
+   {
+    "n": 342404,
+    "t": "sessions: Promote New Chat on session rows by default",
+    "at": "2026-10-18T16:41:14Z"
+   },
+   {
+    "n": 342389,
+    "t": "agentHost: wait for the published toggle instead of counting ticks in restoreSession tests",
+    "at": "2026-10-18T16:41:25Z"
+   },
+   {
+    "n": 342393,
+    "t": "extensions: honor agentsWindow capability without an API proposal",
+    "at": "2026-10-18T16:41:45Z"
+   },
+   {
+    "n": 341778,
+    "t": "Define monospace by measuring the widths",
+    "at": "2026-10-18T17:39:14Z"
+   },
+   {
+    "n": 342415,
+    "t": "sessions: fix model picker and terminal startup in cloud sandboxes",
+    "at": "2026-10-18T18:57:24Z"
+   },
+   {
+    "n": 342416,
+    "t": "agentHost: exclude external sessions from Mission Control",
+    "at": "2026-10-18T19:11:04Z"
+   },
+   {
+    "n": 342422,
+    "t": "welcome: Remove experiment-gated GitHub sign-in banner",
+    "at": "2026-10-18T20:03:35Z"
+   },
+   {
+    "n": 342344,
+    "t": "ci: install current WSL on Windows smoke agents to fix flaky WSL setup",
+    "at": "2026-10-18T20:10:29Z"
+   },
+   {
+    "n": 342092,
+    "t": "agentHost: keep plugin subagents in Copilot catalog",
+    "at": "2026-10-18T20:25:08Z"
+   },
+   {
+    "n": 341312,
+    "t": "Sort repository marketplace sources by name",
+    "at": "2026-10-18T20:26:23Z"
+   },
+   {
+    "n": 338904,
+    "t": "sessions: Find sessions by pull request number",
+    "at": "2026-10-18T20:32:43Z"
+   },
+   {
+    "n": 342423,
+    "t": "sessions: filter abandoned empty Cloud tasks",
+    "at": "2026-10-18T20:40:55Z"
+   },
+   {
+    "n": 340564,
+    "t": "Fix cloud customization sync feedback loop",
+    "at": "2026-10-18T21:13:24Z"
+   },
+   {
+    "n": 342336,
+    "t": "agentHost: defer tools by default and allow-list runtime built-ins",
+    "at": "2026-10-18T21:29:58Z"
+   },
+   {
+    "n": 342429,
+    "t": "github: update telemetry to match recent changes",
+    "at": "2026-10-18T22:48:11Z"
+   },
+   {
+    "n": 342430,
+    "t": "Add marketplace protocol links with user confirmation",
+    "at": "2026-10-18T22:50:04Z"
+   },
+   {
+    "n": 342370,
+    "t": "Stop delivering steering messages the user removed from the queue",
+    "at": "2026-10-18T23:03:39Z"
+   },
+   {
+    "n": 341230,
+    "t": "chat: support named and prompted Agent Host forks",
+    "at": "2026-10-18T23:09:23Z"
+   },
+   {
+    "n": 342438,
+    "t": "sessions: skip worktree measurement for cloud sandboxes",
+    "at": "2026-10-18T23:20:25Z"
+   },
+   {
+    "n": 342437,
+    "t": "agentHost: clarify read-only connection errors",
+    "at": "2026-10-18T23:20:50Z"
+   },
+   {
+    "n": 342442,
+    "t": "welcome: Restore GitHub sign-in banner and enable by default",
+    "at": "2026-10-18T23:34:16Z"
+   },
+   {
+    "n": 342446,
+    "t": "Add component fixtures for the language status hover",
+    "at": "2026-10-18T23:48:23Z"
+   },
+   {
+    "n": 337719,
+    "t": "Show a language-status warning for diagnostic highlight limits",
+    "at": "2026-10-19T00:23:21Z"
+   },
+   {
+    "n": 342455,
+    "t": "Sessions: show application badge by default on Stable",
+    "at": "2026-10-19T00:47:25Z"
+   },
+   {
+    "n": 342440,
+    "t": "chat: download generated image batches as ZIP",
+    "at": "2026-10-19T01:17:22Z"
+   },
+   {
+    "n": 342445,
+    "t": "agentHost: wait for client tool result confirmation",
+    "at": "2026-10-19T02:00:16Z"
+   },
+   {
+    "n": 342458,
+    "t": "sessions: fix cloud read state for recorded conversations",
+    "at": "2026-10-19T02:00:22Z"
+   },
+   {
+    "n": 342450,
+    "t": "agentHost: resolve tool name conflicts",
+    "at": "2026-10-19T02:00:26Z"
+   },
+   {
+    "n": 342459,
+    "t": "agentHost: add bounded Mission Control session and failure telemetry",
+    "at": "2026-10-19T02:00:41Z"
+   },
+   {
+    "n": 342460,
+    "t": "chat: clarify remote connection method descriptions",
+    "at": "2026-10-19T02:01:47Z"
+   },
+   {
+    "n": 342456,
+    "t": "agentHost: restore isolated history without execution credentials",
+    "at": "2026-10-19T03:08:46Z"
+   },
+   {
+    "n": 342471,
+    "t": "agentHost: surface SDK inventory refusals and recover once on list",
+    "at": "2026-10-19T04:23:29Z"
+   },
+   {
+    "n": 342474,
+    "t": "[Perf] chat: reuse remote customization scopes",
+    "at": "2026-10-19T06:42:09Z"
+   },
+   {
+    "n": 342492,
+    "t": "Engineering - Run Agent Host E2E tests in their own Azure DevOps job",
+    "at": "2026-10-19T07:48:18Z"
+   },
+   {
+    "n": 342495,
+    "t": "Optimize diagnostic tasks for unit test jobs in Azure Pipelines",
+    "at": "2026-10-19T07:50:00Z"
+   },
+   {
+    "n": 342490,
+    "t": "Fix sandbox write confirmation option handling",
+    "at": "2026-10-19T08:13:48Z"
+   }
+  ]
+ },
+ "intro": {
+  "say": "Forty-nine changes in a single day. Here are ten you'll notice."
+ },
+ "changes": [
+  {
+   "rank": 1,
+   "number": 342442,
+   "url": "https://github.com/microsoft/vscode/pull/342442",
+   "author": "alexdima",
+   "title": "welcome: Restore GitHub sign-in banner and enable by default",
+   "headline": "Signed out? The Welcome page offers GitHub sign-in",
+   "eyebrow": "When you're signed out",
+   "say": "The Welcome page now offers GitHub sign-in when you're signed out.",
+   "visual": {
+    "kind": "scene",
+    "name": "button-swap",
+    "params": {
+     "tab": "Welcome",
+     "before": {
+      "text": "Try out the new Agents window",
+      "icon": "agent"
+     },
+     "after": {
+      "text": "Sign in to GitHub",
+      "icon": "github"
+     }
+    }
+   },
+   "motion": {
+    "sync": {
+     "swap": "GitHub"
+    }
+   }
+  },
+  {
+   "rank": 2,
+   "number": 342404,
+   "url": "https://github.com/microsoft/vscode/pull/342404",
+   "author": "alexdima",
+   "title": "sessions: Promote New Chat on session rows by default",
+   "headline": "Session rows lead with New Nested Session",
+   "eyebrow": "A session's first button",
+   "say": "A session's first button now starts a nested session.",
+   "visual": {
+    "kind": "recording",
+    "demo": "c2",
+    "src": "screens/2026-10-19/c2.mp4",
+    "fps": 30,
+    "viewport": [
+     1280,
+     720
+    ],
+    "duration": 10.87,
+    "from": 0,
+    "marks": {
+     "plus": {
+      "rect": [
+       222,
+       161.5,
+       22,
+       22
+      ],
+      "visible": [
+       [
+        2.15,
+        10.87
+       ]
+      ]
+     },
+     "tooltip": {
+      "rect": [
+       151.5,
+       186.5,
+       165.5,
+       25
+      ],
+      "visible": [
+       [
+        4.23,
+        7.52
+       ]
+      ]
+     },
+     "nested": {
+      "rect": [
+       4,
+       212,
+       272,
+       56
+      ],
+      "visible": [
+       [
+        7.74,
+        10.87
+       ]
+      ]
+     }
+    }
+   },
+   "motion": {
+    "from": 5,
+    "hero": [
+     "plus",
+     "tooltip",
+     "nested"
+    ],
+    "loupe": {
+     "block": [
+      0,
+      40,
+      290,
+      240
+     ]
+    }
+   }
+  },
+  {
+   "rank": 3,
+   "number": 342455,
+   "url": "https://github.com/microsoft/vscode/pull/342455",
+   "author": "alexdima",
+   "title": "Sessions: show application badge by default on Stable",
+   "headline": "The app icon now shows the badge",
+   "eyebrow": "Agents window",
+   "say": "The app icon now shows the badge.",
+   "visual": {
+    "kind": "scene",
+    "name": "app-badge",
+    "params": {
+     "count": 2
+    }
+   },
+   "motion": {
+    "sync": {
+     "badge": "badge"
+    }
+   }
+  },
+  {
+   "rank": 4,
+   "number": 341230,
+   "url": "https://github.com/microsoft/vscode/pull/341230",
+   "author": "DonJayamanne",
+   "title": "chat: support named and prompted Agent Host forks",
+   "headline": "/fork, with a title or with a prompt",
+   "eyebrow": "In Agent Host chats",
+   "say": "Fork a chat with a title, or a prompt to send right away.",
+   "visual": {
+    "kind": "recording",
+    "demo": "c4",
+    "src": "screens/2026-10-19/c4.mp4",
+    "fps": 30,
+    "viewport": [
+     1280,
+     720
+    ],
+    "duration": 9.97,
+    "from": 0,
+    "marks": {
+     "title": {
+      "rect": [
+       375,
+       641,
+       572,
+       20
+      ],
+      "visible": [
+       [
+        2.15,
+        6.23
+       ]
+      ]
+     },
+     "prompt": {
+      "rect": [
+       375,
+       661,
+       572,
+       20
+      ],
+      "visible": [
+       [
+        2.16,
+        6.23
+       ]
+      ]
+     },
+     "forked": {
+      "rect": [
+       4,
+       212,
+       272,
+       56
+      ],
+      "visible": [
+       [
+        7.35,
+        9.97
+       ]
+      ]
+     }
+    }
+   },
+   "motion": {
+    "from": 1.6,
+    "hero": [
+     "title",
+     "prompt"
+    ],
+    "loupe": {
+     "block": [
+      345,
+      573,
+      610,
+      127
+     ]
+    }
+   }
+  },
+  {
+   "rank": 5,
+   "number": 342430,
+   "url": "https://github.com/microsoft/vscode/pull/342430",
+   "author": "aeschli",
+   "title": "Add marketplace protocol links with user confirmation",
+   "headline": "Plugin links that ask before they act",
+   "eyebrow": "VS Code links",
+   "say": "Plugin links now ask before adding or installing anything.",
+   "visual": {
+    "kind": "recording",
+    "demo": "c5",
+    "src": "screens/2026-10-19/c5.mp4",
+    "fps": 30,
+    "viewport": [
+     1280,
+     720
+    ],
+    "duration": 12.27,
+    "from": 0,
+    "marks": {
+     "url": {
+      "rect": [
+       348,
+       14,
+       586,
+       23
+      ],
+      "visible": [
+       [
+        0.56,
+        2.01
+       ],
+       [
+        4.87,
+        6.39
+       ]
+      ]
+     },
+     "dialog1": {
+      "rect": [
+       415,
+       254,
+       450,
+       212
+      ],
+      "visible": [
+       [
+        2.14,
+        4.76
+       ]
+      ]
+     },
+     "dialog1.primary": {
+      "rect": [
+       742.5,
+       431,
+       113.5,
+       26
+      ],
+      "visible": [
+       [
+        2.14,
+        4.77
+       ]
+      ]
+     },
+     "dialog2": {
+      "rect": [
+       415,
+       236.8,
+       450,
+       246.4
+      ],
+      "visible": [
+       [
+        6.52,
+        10.94
+       ]
+      ]
+     },
+     "dialog2.primary": {
+      "rect": [
+       681.3,
+       448.2,
+       174.8,
+       26
+      ],
+      "visible": [
+       [
+        6.52,
+        10.95
+       ]
+      ]
+     },
+     "dialog2.warning": {
+      "rect": [
+       554.2,
+       330.7,
+       234.1,
+       15
+      ],
+      "visible": [
+       [
+        6.53,
+        10.95
+       ]
+      ]
+     }
+    }
+   },
+   "motion": {
+    "from": 6.42,
+    "hero": [
+     "dialog2"
+    ],
+    "loupe": {
+     "block": [
+      405,
+      228,
+      470,
+      264
+     ]
+    }
+   }
+  },
+  {
+   "rank": 6,
+   "number": 342440,
+   "url": "https://github.com/microsoft/vscode/pull/342440",
+   "author": "justschen",
+   "title": "chat: download generated image batches as ZIP",
+   "headline": "Save a whole image batch as one ZIP",
+   "eyebrow": "Generated images in chat",
+   "say": "Save a whole batch of generated images as one ZIP.",
+   "visual": {
+    "kind": "scene",
+    "name": "list-actions",
+    "params": {
+     "rows": [
+      {
+       "label": "Image batch",
+       "sub": "4 images"
+      },
+      {
+       "label": "lighthouse-1.png"
+      },
+      {
+       "label": "lighthouse-2.png"
+      }
+     ],
+     "row": 0,
+     "after": {
+      "icon": "desktop-download",
+      "tooltip": "Download All Images as ZIP"
+     },
+     "images": [
+      "scenes/lighthouse-1.png",
+      "scenes/lighthouse-2.png",
+      "scenes/lighthouse-3.png",
+      "scenes/lighthouse-4.png"
+     ]
+    }
+   },
+   "motion": {
+    "sync": {
+     "hover": "batch",
+     "click": "ZIP"
+    }
+   }
+  },
+  {
+   "rank": 7,
+   "number": 337719,
+   "url": "https://github.com/microsoft/vscode/pull/337719",
+   "author": "aiday-mar",
+   "title": "Show a language-status warning for diagnostic highlight limits",
+   "headline": "Language Status says when diagnostics are cut",
+   "eyebrow": "Editor Language Status",
+   "say": "Language Status now says when some diagnostics aren't shown.",
+   "visual": {
+    "kind": "recording",
+    "demo": "c7",
+    "src": "screens/2026-10-19/c7.mp4",
+    "fps": 30,
+    "viewport": [
+     1280,
+     720
+    ],
+    "duration": 10,
+    "from": 0,
+    "marks": {
+     "status": {
+      "rect": [
+       1151.1,
+       694,
+       22,
+       24
+      ],
+      "visible": [
+       [
+        0.39,
+        10
+       ]
+      ]
+     },
+     "hover": {
+      "rect": [
+       761,
+       627,
+       518,
+       64
+      ],
+      "visible": [
+       [
+        3.66,
+        10
+       ]
+      ]
+     }
+    }
+   },
+   "motion": {
+    "from": 2.9,
+    "hero": [
+     "hover",
+     "status"
+    ],
+    "loupe": {
+     "block": [
+      745,
+      612,
+      535,
+      108
+     ]
+    }
+   }
+  },
+  {
+   "rank": 8,
+   "number": 342370,
+   "url": "https://github.com/microsoft/vscode/pull/342370",
+   "author": "karthiknadig",
+   "title": "Stop delivering steering messages the user removed from the queue",
+   "headline": "Removed steering messages stay removed",
+   "eyebrow": "In Agent Host chats",
+   "say": "Remove a queued steering message, and the agent never gets it.",
+   "visual": {
+    "kind": "scene",
+    "name": "queued-message",
+    "params": {
+     "message": "Also add a test for the empty state",
+     "action": "Remove from Queue"
+    }
+   },
+   "motion": {
+    "sync": {
+     "remove": "message",
+     "done": "never"
+    }
+   }
+  },
+  {
+   "rank": 9,
+   "number": 342415,
+   "url": "https://github.com/microsoft/vscode/pull/342415",
+   "author": "roblourens",
+   "title": "sessions: fix model picker and terminal startup in cloud sandboxes",
+   "headline": "Cloud Sandbox sessions keep their model picker",
+   "eyebrow": "Cloud Sandbox sessions",
+   "say": "Reopened Cloud Sandbox sessions get their model picker back.",
+   "visual": {
+    "kind": "scene",
+    "name": "picker",
+    "params": {
+     "button": {
+      "label": "Claude Opus 5.5",
+      "icon": "sparkle"
+     },
+     "items": [
+      {
+       "label": "Auto",
+       "icon": "sparkle"
+      },
+      {
+       "label": "Claude Opus 5.5",
+       "icon": "sparkle"
+      },
+      {
+       "label": "Claude Sonnet 5.5",
+       "icon": "sparkle"
+      },
+      {
+       "label": "GPT-6.1 Sol",
+       "icon": "sparkle"
+      }
+     ],
+     "loads": true,
+     "context": {
+      "project": "Cloud Sandbox · my-repo",
+      "groups": [
+       {
+        "label": "Cloud Sandbox",
+        "icon": "cloud",
+        "sessions": [
+         {
+          "title": "Run the unit tests",
+          "time": "3 hours ago",
+          "icon": "cloud",
+          "selected": true
+         },
+         {
+          "title": "Fix the flaky build",
+          "time": "yesterday",
+          "icon": "cloud"
+         }
+        ]
+       },
+       {
+        "label": "my-project",
+        "icon": "folder",
+        "sessions": [
+         {
+          "title": "To-do Tagline",
+          "time": "yesterday"
+         }
+        ]
+       }
+      ],
+      "prompt": "Run the unit tests and fix what fails.",
+      "reply": "All 214 tests pass now: the date parsing in utils/date.ts handled time zones wrong, and the fix is in."
+     }
+    }
+   },
+   "motion": {
+    "sync": {
+     "load": "model",
+     "open": "back"
+    }
+   }
+  },
+  {
+   "rank": 10,
+   "number": 338904,
+   "url": "https://github.com/microsoft/vscode/pull/338904",
+   "author": "aeschli",
+   "title": "sessions: Find sessions by pull request number",
+   "headline": "Find sessions by pull request number",
+   "eyebrow": "In the Agents window",
+   "say": "And find any session by its pull request number.",
+   "visual": {
+    "kind": "scene",
+    "name": "sessions-find",
+    "params": {
+     "query": "#241533",
+     "match": 1,
+     "sessions": [
+      {
+       "title": "Fix flaky terminal tests",
+       "sub": "2 hours ago",
+       "prompt": "Find out why the terminal tests are flaky and fix them."
+      },
+      {
+       "title": "Welcome page sign-in",
+       "sub": "yesterday",
+       "pr": 241533,
+       "prompt": "Offer GitHub sign-in on the Welcome page when signed out."
+      },
+      {
+       "title": "Refactor quick pick",
+       "sub": "2 days ago"
+      },
+      {
+       "title": "Update telemetry docs",
+       "sub": "3 days ago"
+      }
+     ]
+    }
+   },
+   "motion": {
+    "sync": {
+     "find": "find",
+     "type": "session",
+     "typed": "number"
+    }
+   }
+  }
+ ],
+ "source": {
+  "project": "skills/generate-changelog-film/example/2026-10-19 (the engine project was work/videos/changelog-2026-10-19)"
+ }
+}

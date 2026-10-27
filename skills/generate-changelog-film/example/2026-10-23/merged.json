@@ -1,0 +1,698 @@
+{
+ "window": [
+  "2026-10-22T08:00:00Z",
+  "2026-10-23T08:30:00Z"
+ ],
+ "merged": [
+  {
+   "n": 343424,
+   "t": "Agents - enhance files view submenu and reorganize toolbar actions",
+   "at": "2026-10-22T08:00:35Z"
+  },
+  {
+   "n": 343257,
+   "t": "Agents: use harness tool inventories in agent files",
+   "at": "2026-10-22T08:09:17Z"
+  },
+  {
+   "n": 343114,
+   "t": "sessions: preserve static warning fills and reduce session motion",
+   "at": "2026-10-22T08:29:36Z"
+  },
+  {
+   "n": 343439,
+   "t": "Use aka link for sandboxing docs link",
+   "at": "2026-10-22T09:06:56Z"
+  },
+  {
+   "n": 343429,
+   "t": "Agents - fix spacing for the environment picker in the new session composer",
+   "at": "2026-10-22T09:14:48Z"
+  },
+  {
+   "n": 343446,
+   "t": "sessions: keep new nested sessions from showing PR icons",
+   "at": "2026-10-22T10:14:26Z"
+  },
+  {
+   "n": 343456,
+   "t": "agentHost: Stabilize saved chat continuation artifact assertions",
+   "at": "2026-10-22T10:44:51Z"
+  },
+  {
+   "n": 343441,
+   "t": "workbench: auto-hide sash grippers when the mouse is idle",
+   "at": "2026-10-22T10:55:22Z"
+  },
+  {
+   "n": 343445,
+   "t": "Agents window: restore hover feedback for sticky list controls",
+   "at": "2026-10-22T11:02:06Z"
+  },
+  {
+   "n": 343467,
+   "t": "sessions: base application badges on creating application",
+   "at": "2026-10-22T11:23:27Z"
+  },
+  {
+   "n": 343460,
+   "t": "agentHost: keep a moved chat's pull requests when it moves, nests or is promoted",
+   "at": "2026-10-22T11:27:26Z"
+  },
+  {
+   "n": 343463,
+   "t": "chat: explain the Agents window in a title bar hover card for new users",
+   "at": "2026-10-22T11:27:29Z"
+  },
+  {
+   "n": 343458,
+   "t": "agentHost: limit send_message and session creation per session, not per process",
+   "at": "2026-10-22T11:30:52Z"
+  },
+  {
+   "n": 343465,
+   "t": "sessions: persist PR state across Agents window restarts",
+   "at": "2026-10-22T11:31:29Z"
+  },
+  {
+   "n": 343464,
+   "t": "sessions: list folders like New Session in the New Nested Session folder picker",
+   "at": "2026-10-22T11:32:11Z"
+  },
+  {
+   "n": 343457,
+   "t": "fix(agentHost): persist scratch directories for new Codex chats",
+   "at": "2026-10-22T11:46:17Z"
+  },
+  {
+   "n": 343240,
+   "t": "sessions: add environment grouping to the sessions list",
+   "at": "2026-10-22T11:48:57Z"
+  },
+  {
+   "n": 343239,
+   "t": "sessions: nest automatic sections inside custom groups",
+   "at": "2026-10-22T11:48:58Z"
+  },
+  {
+   "n": 343438,
+   "t": "Canvases: Add Agent Host inventory for Copilot Extensions (aka Canvas Extensions)",
+   "at": "2026-10-22T11:53:29Z"
+  },
+  {
+   "n": 343282,
+   "t": "agentHost: preserve multi-root Copilot customizations",
+   "at": "2026-10-22T11:54:12Z"
+  },
+  {
+   "n": 343454,
+   "t": "sessions: share suggestion menu corner styling with Modern UI",
+   "at": "2026-10-22T11:57:51Z"
+  },
+  {
+   "n": 343477,
+   "t": "sessions: show active entries in the session activity bar and toggle them like the activity bar",
+   "at": "2026-10-22T12:24:54Z"
+  },
+  {
+   "n": 342451,
+   "t": "processes: resolve killTree when the process exits while its tree is killed",
+   "at": "2026-10-22T12:30:48Z"
+  },
+  {
+   "n": 343468,
+   "t": "Agents - Add multi-file diff action to pull request rows",
+   "at": "2026-10-22T13:18:06Z"
+  },
+  {
+   "n": 343491,
+   "t": "canvases: fix one-frame flash when restoring a canvas into a hidden editor",
+   "at": "2026-10-22T13:22:45Z"
+  },
+  {
+   "n": 343469,
+   "t": "agentHost: let the agent ask to turn on Computer Use",
+   "at": "2026-10-22T13:26:32Z"
+  },
+  {
+   "n": 343440,
+   "t": "Make prompt file context target aware",
+   "at": "2026-10-22T13:27:03Z"
+  },
+  {
+   "n": 343485,
+   "t": "sessions: hide redundant environment labels in workspace picker",
+   "at": "2026-10-22T13:30:07Z"
+  },
+  {
+   "n": 343498,
+   "t": "sessions: enable new session composer layout by default in Insiders",
+   "at": "2026-10-22T13:45:58Z"
+  },
+  {
+   "n": 343494,
+   "t": "Agents - fix spacing between icon and label",
+   "at": "2026-10-22T13:59:50Z"
+  },
+  {
+   "n": 343444,
+   "t": "sessions: stop the customization migration badge flickering",
+   "at": "2026-10-22T14:12:35Z"
+  },
+  {
+   "n": 343484,
+   "t": "sessions: resolve the session activity bar entry's hide command once",
+   "at": "2026-10-22T14:17:06Z"
+  },
+  {
+   "n": 343505,
+   "t": "docs: Add hover and instant-hover grouping skill",
+   "at": "2026-10-22T14:24:48Z"
+  },
+  {
+   "n": 343386,
+   "t": "chat: share customization on/off state across windows and profiles",
+   "at": "2026-10-22T14:24:52Z"
+  },
+  {
+   "n": 343480,
+   "t": "Fix plugin source installs for Copilot Agent Host",
+   "at": "2026-10-22T14:28:34Z"
+  },
+  {
+   "n": 343483,
+   "t": "chat: open session file artifacts through the remote agent host",
+   "at": "2026-10-22T14:38:56Z"
+  },
+  {
+   "n": 343504,
+   "t": "agentHost: add the required customization fields to the Computer Use launcher test",
+   "at": "2026-10-22T14:42:56Z"
+  },
+  {
+   "n": 343496,
+   "t": "sessions: expand a collapsed chat group when its chat becomes active",
+   "at": "2026-10-22T14:44:02Z"
+  },
+  {
+   "n": 343508,
+   "t": "sessions: scope canvas activity actions to the active chat",
+   "at": "2026-10-22T15:15:25Z"
+  },
+  {
+   "n": 343373,
+   "t": "Customizations: Mark Copilot Connector search results as verified",
+   "at": "2026-10-22T15:15:33Z"
+  },
+  {
+   "n": 343516,
+   "t": "canvases: reveal native canvas view only after its bounds are applied",
+   "at": "2026-10-22T15:17:22Z"
+  },
+  {
+   "n": 343500,
+   "t": "sessions: add workspace filtering to worktree cleanup",
+   "at": "2026-10-22T15:31:56Z"
+  },
+  {
+   "n": 343495,
+   "t": "sessions: collapse new-session pickers to their icon from their context menu",
+   "at": "2026-10-22T15:32:45Z"
+  },
+  {
+   "n": 343512,
+   "t": "sessions: add agent tools to read and organize the Sessions list",
+   "at": "2026-10-22T15:33:23Z"
+  },
+  {
+   "n": 343513,
+   "t": "sessions: restore no-workspace side pane per chat in chat layout mode",
+   "at": "2026-10-22T16:01:33Z"
+  },
+  {
+   "n": 343539,
+   "t": "agentHost: keep a chat's Agent Merge when it moves, nests or is promoted",
+   "at": "2026-10-22T16:09:23Z"
+  },
+  {
+   "n": 343503,
+   "t": "sessions: preserve This Computer during composer restoration",
+   "at": "2026-10-22T16:25:46Z"
+  },
+  {
+   "n": 343514,
+   "t": "chat: use shallow clones for agent plugins",
+   "at": "2026-10-22T16:58:05Z"
+  },
+  {
+   "n": 343541,
+   "t": "chore: bump remote node@24.22.1",
+   "at": "2026-10-22T17:23:23Z"
+  },
+  {
+   "n": 343561,
+   "t": "Hide the Auto routing placeholder for Copilot Fusion",
+   "at": "2026-10-22T17:35:11Z"
+  },
+  {
+   "n": 342316,
+   "t": "Agents Window: fix redundant left inset on icon-labeled tabs in LTR",
+   "at": "2026-10-22T17:46:58Z"
+  },
+  {
+   "n": 343549,
+   "t": "chat: fix voice context, question narration, and steering",
+   "at": "2026-10-22T17:53:12Z"
+  },
+  {
+   "n": 343546,
+   "t": "agentHost: set up Computer Use one permission at a time",
+   "at": "2026-10-22T17:55:22Z"
+  },
+  {
+   "n": 343537,
+   "t": "Align Agents window empty states and action controls",
+   "at": "2026-10-22T17:57:31Z"
+  },
+  {
+   "n": 343553,
+   "t": "voice: cache GPT Live model discovery during startup",
+   "at": "2026-10-22T17:58:08Z"
+  },
+  {
+   "n": 343547,
+   "t": "agentHost: bind Mission Control relay authentication",
+   "at": "2026-10-22T18:03:12Z"
+  },
+  {
+   "n": 343533,
+   "t": "Allow pinning aggregated chat status pills",
+   "at": "2026-10-22T18:04:24Z"
+  },
+  {
+   "n": 343563,
+   "t": "Describe Copilot Fusion in the model picker hovers",
+   "at": "2026-10-22T18:09:34Z"
+  },
+  {
+   "n": 343381,
+   "t": "mcp: align policy matching and gallery command admission",
+   "at": "2026-10-22T18:19:48Z"
+  },
+  {
+   "n": 343295,
+   "t": "Add standalone managed Code OSS launcher",
+   "at": "2026-10-22T18:20:24Z"
+  },
+  {
+   "n": 343565,
+   "t": "sessions: use the remote icon for tunnels",
+   "at": "2026-10-22T18:43:47Z"
+  },
+  {
+   "n": 343420,
+   "t": "chat: disable Add Models for the remote Copilot harness",
+   "at": "2026-10-22T19:16:41Z"
+  },
+  {
+   "n": 343569,
+   "t": "Reject tsgo builds when completion callbacks throw",
+   "at": "2026-10-22T19:18:51Z"
+  },
+  {
+   "n": 343300,
+   "t": "Fix Windows extension source watcher glob matching",
+   "at": "2026-10-22T19:19:56Z"
+  },
+  {
+   "n": 343297,
+   "t": "Add opt-in extension build lifecycle events",
+   "at": "2026-10-22T19:21:31Z"
+  },
+  {
+   "n": 343437,
+   "t": "Debug Extension Host: enable inspector on running extension host instead of requiring restart",
+   "at": "2026-10-22T19:30:24Z"
+  },
+  {
+   "n": 343531,
+   "t": "Reorder listed chats through the chats observable, not a session event",
+   "at": "2026-10-22T19:31:42Z"
+  },
+  {
+   "n": 343557,
+   "t": "sessions: add opt-in PR and issue actions to the activity bar",
+   "at": "2026-10-22T19:32:18Z"
+  },
+  {
+   "n": 342220,
+   "t": "chat: clarify customization migration guidance",
+   "at": "2026-10-22T19:41:34Z"
+  },
+  {
+   "n": 343518,
+   "t": "Add badge to extensions in customizations",
+   "at": "2026-10-22T19:45:21Z"
+  },
+  {
+   "n": 320852,
+   "t": "Make Delete Cell button reachable via arrow keys in notebook cell toolbar",
+   "at": "2026-10-22T19:45:41Z"
+  },
+  {
+   "n": 343593,
+   "t": "Keep customization migration banner stable while refreshing",
+   "at": "2026-10-22T20:25:55Z"
+  },
+  {
+   "n": 343555,
+   "t": "chat: add configurable GPT Live session awareness",
+   "at": "2026-10-22T20:58:32Z"
+  },
+  {
+   "n": 343576,
+   "t": "sessions: Add custom group icons and theme-aware colors",
+   "at": "2026-10-22T20:59:08Z"
+  },
+  {
+   "n": 343211,
+   "t": "ci: stop the dependencies check waiting hours for quarantined npm packages",
+   "at": "2026-10-22T21:01:01Z"
+  },
+  {
+   "n": 343579,
+   "t": "Polish migration discovery error state",
+   "at": "2026-10-22T21:02:30Z"
+  },
+  {
+   "n": 343564,
+   "t": "agentHost: bump Copilot SDK to 1.0.26",
+   "at": "2026-10-22T21:26:18Z"
+  },
+  {
+   "n": 343614,
+   "t": "sessions: stabilize comparison submit progress",
+   "at": "2026-10-22T21:43:23Z"
+  },
+  {
+   "n": 343618,
+   "t": "sessions: fix cloud submission for selected local repositories",
+   "at": "2026-10-22T21:44:28Z"
+  },
+  {
+   "n": 343606,
+   "t": "Reset Codex service tier for Copilot-backed threads",
+   "at": "2026-10-22T21:44:32Z"
+  },
+  {
+   "n": 343597,
+   "t": "ci: run Copilot setup steps on vscode-large-runners-ubuntu-8-core",
+   "at": "2026-10-22T21:46:30Z"
+  },
+  {
+   "n": 343325,
+   "t": "build: retry Cache@2 steps on task failure",
+   "at": "2026-10-22T21:56:43Z"
+  },
+  {
+   "n": 343601,
+   "t": "[Perf] sessions: avoid provider-driven UI rebuilds during shutdown",
+   "at": "2026-10-22T22:14:55Z"
+  },
+  {
+   "n": 343304,
+   "t": "Support no-link local Markdown editor package overrides",
+   "at": "2026-10-22T22:16:05Z"
+  },
+  {
+   "n": 343392,
+   "t": "chat: simplify remote sharing controls",
+   "at": "2026-10-22T22:17:25Z"
+  },
+  {
+   "n": 343613,
+   "t": "chat: render sandbox Markdown images from tool results",
+   "at": "2026-10-22T22:17:45Z"
+  },
+  {
+   "n": 343602,
+   "t": "agentHost: await registration and discovery signals instead of polling timers in agentService tests",
+   "at": "2026-10-22T22:18:56Z"
+  },
+  {
+   "n": 343591,
+   "t": "multiDiffEditor: keep a shrunk item in view at a viewport-bottom anchor",
+   "at": "2026-10-22T22:19:24Z"
+  },
+  {
+   "n": 343617,
+   "t": "sessions: offer Mark as Read/Unread on nested session context menu",
+   "at": "2026-10-22T22:20:20Z"
+  },
+  {
+   "n": 343628,
+   "t": "agentHost: report HydraFusion phases as phases, not turns",
+   "at": "2026-10-22T22:38:26Z"
+  },
+  {
+   "n": 343566,
+   "t": "build: harden dpkg-shlibdeps.pl download for deb packaging",
+   "at": "2026-10-22T22:44:39Z"
+  },
+  {
+   "n": 343604,
+   "t": "Engineering - add an SDK validation pipeline without signing credentials",
+   "at": "2026-10-22T22:45:10Z"
+  },
+  {
+   "n": 343635,
+   "t": "sessions: open PR and issue activity bar actions directly",
+   "at": "2026-10-22T23:00:21Z"
+  },
+  {
+   "n": 343608,
+   "t": "Fix duplicate images in carousel by adjusting artifact handling",
+   "at": "2026-10-22T23:04:14Z"
+  },
+  {
+   "n": 343607,
+   "t": "Add telemetry to estimate Copilot CLI session recovery impact",
+   "at": "2026-10-22T23:05:41Z"
+  },
+  {
+   "n": 343627,
+   "t": "chore: bump several dependencies",
+   "at": "2026-10-22T23:09:26Z"
+  },
+  {
+   "n": 343116,
+   "t": "agentHost: backpressure Mission Control resource reads",
+   "at": "2026-10-22T23:11:08Z"
+  },
+  {
+   "n": 343611,
+   "t": "ci: Fix CSS order scan timing out every day",
+   "at": "2026-10-22T23:11:22Z"
+  },
+  {
+   "n": 343624,
+   "t": "Agent Host: accept managed model \"fusion\" as Auto",
+   "at": "2026-10-22T23:11:34Z"
+  },
+  {
+   "n": 343358,
+   "t": "ci: reuse the Copilot node_modules cache in chat-lib tests",
+   "at": "2026-10-22T23:12:09Z"
+  },
+  {
+   "n": 343329,
+   "t": "sanity: keep the app logs of failed desktop UI tests",
+   "at": "2026-10-22T23:19:58Z"
+  },
+  {
+   "n": 343603,
+   "t": "agentHost: await real signals instead of polling timers in the remaining agentService tests",
+   "at": "2026-10-22T23:48:54Z"
+  },
+  {
+   "n": 343640,
+   "t": "sessions: accept server-originated cloud sandbox feed messages",
+   "at": "2026-10-22T23:50:03Z"
+  },
+  {
+   "n": 343646,
+   "t": "agent host: add regression tests for permission config changes during SDK initialization",
+   "at": "2026-10-22T23:58:39Z"
+  },
+  {
+   "n": 343644,
+   "t": "sessions: avoid generic API event types in application attribution",
+   "at": "2026-10-22T23:59:42Z"
+  },
+  {
+   "n": 343650,
+   "t": "chat: Skip redundant picker toolbar layout passes",
+   "at": "2026-10-23T00:22:52Z"
+  },
+  {
+   "n": 343620,
+   "t": "[Perf] sessions: coalesce catalogue-driven list refreshes",
+   "at": "2026-10-23T01:12:32Z"
+  },
+  {
+   "n": 343655,
+   "t": "Fix recovery UI for chat session reopening failures",
+   "at": "2026-10-23T01:14:48Z"
+  },
+  {
+   "n": 343649,
+   "t": "Fix AHP prompt disappearance issue and add regression tests",
+   "at": "2026-10-23T01:15:28Z"
+  },
+  {
+   "n": 343609,
+   "t": "Fix image generation animation jump and improve continuity",
+   "at": "2026-10-23T01:16:06Z"
+  },
+  {
+   "n": 343645,
+   "t": "agentHost: fix Linux sandbox tool lookup when sbin is not on PATH",
+   "at": "2026-10-23T01:16:40Z"
+  },
+  {
+   "n": 343630,
+   "t": "fix blobby landing logic",
+   "at": "2026-10-23T02:06:58Z"
+  },
+  {
+   "n": 343669,
+   "t": "agentHost: add development override for Mission Control repository metadata",
+   "at": "2026-10-23T02:08:42Z"
+  },
+  {
+   "n": 343668,
+   "t": "chat: tighten remote sharing footer padding",
+   "at": "2026-10-23T02:10:25Z"
+  },
+  {
+   "n": 343670,
+   "t": "dialogs: fix typed Windows drive-root navigation",
+   "at": "2026-10-23T02:14:29Z"
+  },
+  {
+   "n": 343656,
+   "t": "chat: simplify cloud sandbox input placeholder",
+   "at": "2026-10-23T02:17:05Z"
+  },
+  {
+   "n": 343626,
+   "t": "Support Compare Agents in empty local repositories",
+   "at": "2026-10-23T02:17:58Z"
+  },
+  {
+   "n": 343673,
+   "t": "sessions: fix workspace picker categories with environment picker",
+   "at": "2026-10-23T02:39:08Z"
+  },
+  {
+   "n": 343674,
+   "t": "agentHost: configure the default clone directory",
+   "at": "2026-10-23T02:41:52Z"
+  },
+  {
+   "n": 343632,
+   "t": "sessions: add opt-in local isolation to the environment picker",
+   "at": "2026-10-23T02:43:12Z"
+  },
+  {
+   "n": 343675,
+   "t": "sessions: preserve Work in Repository for environment-first picker",
+   "at": "2026-10-23T03:00:41Z"
+  },
+  {
+   "n": 343672,
+   "t": "chat: configure GitHub Environments rollout",
+   "at": "2026-10-23T03:40:32Z"
+  },
+  {
+   "n": 343671,
+   "t": "sessions: restore repository-less Cloud chats in the environment picker",
+   "at": "2026-10-23T04:09:31Z"
+  },
+  {
+   "n": 343658,
+   "t": "chat: reuse shared permissions picker for cloud drafts",
+   "at": "2026-10-23T04:10:30Z"
+  },
+  {
+   "n": 343659,
+   "t": "sessions: Hide nested session inline action for cloud sessions",
+   "at": "2026-10-23T04:17:27Z"
+  },
+  {
+   "n": 343684,
+   "t": "Preserve legacy Copilot CLI titles and session state during agent Host migration",
+   "at": "2026-10-23T04:46:51Z"
+  },
+  {
+   "n": 343694,
+   "t": "agentHost: preserve fresh Claude conversations during startup rebuilds",
+   "at": "2026-10-23T05:01:55Z"
+  },
+  {
+   "n": 343693,
+   "t": "Preserve model selection across agent host session refreshes",
+   "at": "2026-10-23T05:06:27Z"
+  },
+  {
+   "n": 343647,
+   "t": "Add Back navigation to plugin marketplace quick picks",
+   "at": "2026-10-23T05:31:13Z"
+  },
+  {
+   "n": 343701,
+   "t": "chat: make cloud sandbox auto-connect experiment-configurable",
+   "at": "2026-10-23T05:31:17Z"
+  },
+  {
+   "n": 343704,
+   "t": "agentHost: Report host launch kind in legacy Copilot CLI migration telemetry",
+   "at": "2026-10-23T06:28:27Z"
+  },
+  {
+   "n": 343339,
+   "t": "agentHost: don't block session open on Copilot Connector reconciliation",
+   "at": "2026-10-23T07:14:31Z"
+  },
+  {
+   "n": 343619,
+   "t": "launch skill: record Code OSS demo videos and fix Windows cleanup",
+   "at": "2026-10-23T07:40:20Z"
+  },
+  {
+   "n": 342784,
+   "t": "Parent the ConPTY console window to the VS Code window",
+   "at": "2026-10-23T07:43:51Z"
+  },
+  {
+   "n": 343705,
+   "t": "Improve customization marketplace source browsing",
+   "at": "2026-10-23T07:45:23Z"
+  },
+  {
+   "n": 343709,
+   "t": "Report Copilot Fusion tiers in Agent Host telemetry",
+   "at": "2026-10-23T07:45:54Z"
+  },
+  {
+   "n": 343706,
+   "t": "Canvases: Fix explicit reopening of restored Agent Host canvases",
+   "at": "2026-10-23T07:47:11Z"
+  },
+  {
+   "n": 343534,
+   "t": "Add custom agent skill suggestions",
+   "at": "2026-10-23T07:56:21Z"
+  }
+ ]
+}

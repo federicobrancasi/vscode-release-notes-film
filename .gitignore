@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+__pycache__/
+# This repo holds one film whole, so a clone renders it: its episode (film/episode/), its recordings
+# (film/public/screens/<date>/) and its narration (film/public/voice/<date>.wav) are tracked. The renders are not, nor
+# the music, which `npm run music` fits to the episode from film/assets/music/theme.flac.
+film/out/
+film/public/music/

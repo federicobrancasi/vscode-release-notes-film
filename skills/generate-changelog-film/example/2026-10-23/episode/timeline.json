@@ -1,0 +1,88 @@
+{
+  "title": "VS Code Changelog · Oct 23, 2026",
+  "fps": 60,
+  "bpm": 120,
+  "scenes": [
+    {
+      "id": "logo",
+      "name": "Logo reveal",
+      "beats": 5
+    },
+    {
+      "id": "stream",
+      "name": "Stream · 138 pull requests",
+      "beats": 4
+    },
+    {
+      "id": "top",
+      "name": "The top 10",
+      "beats": 4
+    },
+    {
+      "id": "c1",
+      "name": "1 · #343672 Share this machine as a GitHub environment",
+      "beats": 10
+    },
+    {
+      "id": "c2",
+      "name": "2 · #343555 Voice Mode can answer how your sessions are going",
+      "beats": 10
+    },
+    {
+      "id": "c3",
+      "name": "3 · #342784 Terminal sign-ins open in front of VS Code",
+      "beats": 10
+    },
+    {
+      "id": "c4",
+      "name": "4 · #343564 Agent Host moves to Copilot SDK 1.0.26",
+      "beats": 10
+    },
+    {
+      "id": "c5",
+      "name": "5 · #343386 Turn a tool off once: it's off everywhere",
+      "beats": 10
+    },
+    {
+      "id": "c6",
+      "name": "6 · #343498 A new layout for starting a session",
+      "beats": 10
+    },
+    {
+      "id": "c7",
+      "name": "7 · #343512 Agents can organize your Sessions list",
+      "beats": 10
+    },
+    {
+      "id": "c8",
+      "name": "8 · #343549 Voice Mode steers the work in progress",
+      "beats": 10
+    },
+    {
+      "id": "c9",
+      "name": "9 · #343546 Computer Use setup, one permission at a time",
+      "beats": 10
+    },
+    {
+      "id": "c10",
+      "name": "10 · #343381 MCP allowlists check commands before names",
+      "beats": 12
+    },
+    {
+      "id": "end",
+      "name": "End card",
+      "beats": 5
+    }
+  ],
+  "music": {
+    "theme": "music/theme.wav",
+    "drop": {
+      "scene": "c1",
+      "beat": 0
+    },
+    "end": {
+      "scene": "end",
+      "beat": 4
+    }
+  }
+}

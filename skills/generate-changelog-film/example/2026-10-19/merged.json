@@ -1,0 +1,253 @@
+{
+ "window": [
+  "2026-10-18T08:00:00Z",
+  "2026-10-19T08:30:00Z"
+ ],
+ "merged": [
+  {
+   "n": 342371,
+   "t": "chat: reuse measured heights for persistent progress",
+   "at": "2026-10-18T08:35:16Z"
+  },
+  {
+   "n": 342353,
+   "t": "test: abort stalled browser unit test runs with in-flight test diagnostics",
+   "at": "2026-10-18T08:45:50Z"
+  },
+  {
+   "n": 342355,
+   "t": "git: drop pending check-ignore work when a repository closes (fix flaky stack operations tests)",
+   "at": "2026-10-18T08:54:36Z"
+  },
+  {
+   "n": 342367,
+   "t": "github: migrate browser plugin downloads to shared clients",
+   "at": "2026-10-18T10:06:07Z"
+  },
+  {
+   "n": 342351,
+   "t": "window: let an unresponsive extension test window recover before failing the run",
+   "at": "2026-10-18T11:58:14Z"
+  },
+  {
+   "n": 342350,
+   "t": "agentHost: fix flaky subagent restore test in Session storage identity compatibility (Windows SQLITE_BUSY)",
+   "at": "2026-10-18T11:58:35Z"
+  },
+  {
+   "n": 342391,
+   "t": "sessions: keep sticky approval rows from growing the session row",
+   "at": "2026-10-18T13:32:27Z"
+  },
+  {
+   "n": 338210,
+   "t": "sessions: Stabilize approval row height during sticky scrolling",
+   "at": "2026-10-18T13:32:30Z"
+  },
+  {
+   "n": 342346,
+   "t": "test: run Agent Host E2E as its own test unit in GitHub Actions and ADO",
+   "at": "2026-10-18T14:28:58Z"
+  },
+  {
+   "n": 342332,
+   "t": "configuration: restore the configuration registry after the tests that empty it",
+   "at": "2026-10-18T14:32:59Z"
+  },
+  {
+   "n": 342270,
+   "t": "agentHost: don't fail createSession when the sessions_v2 import registers its catalog first",
+   "at": "2026-10-18T16:11:21Z"
+  },
+  {
+   "n": 342396,
+   "t": "agents: remove the reveal current session experiment",
+   "at": "2026-10-18T16:26:25Z"
+  },
+  {
+   "n": 342323,
+   "t": "agentHost: preserve archived legacy sessions during migration",
+   "at": "2026-10-18T16:40:57Z"
+  },
+  {
+   "n": 342404,
+   "t": "sessions: Promote New Chat on session rows by default",
+   "at": "2026-10-18T16:41:14Z"
+  },
+  {
+   "n": 342389,
+   "t": "agentHost: wait for the published toggle instead of counting ticks in restoreSession tests",
+   "at": "2026-10-18T16:41:25Z"
+  },
+  {
+   "n": 342393,
+   "t": "extensions: honor agentsWindow capability without an API proposal",
+   "at": "2026-10-18T16:41:45Z"
+  },
+  {
+   "n": 341778,
+   "t": "Define monospace by measuring the widths",
+   "at": "2026-10-18T17:39:14Z"
+  },
+  {
+   "n": 342415,
+   "t": "sessions: fix model picker and terminal startup in cloud sandboxes",
+   "at": "2026-10-18T18:57:24Z"
+  },
+  {
+   "n": 342416,
+   "t": "agentHost: exclude external sessions from Mission Control",
+   "at": "2026-10-18T19:11:04Z"
+  },
+  {
+   "n": 342422,
+   "t": "welcome: Remove experiment-gated GitHub sign-in banner",
+   "at": "2026-10-18T20:03:35Z"
+  },
+  {
+   "n": 342344,
+   "t": "ci: install current WSL on Windows smoke agents to fix flaky WSL setup",
+   "at": "2026-10-18T20:10:29Z"
+  },
+  {
+   "n": 342092,
+   "t": "agentHost: keep plugin subagents in Copilot catalog",
+   "at": "2026-10-18T20:25:08Z"
+  },
+  {
+   "n": 341312,
+   "t": "Sort repository marketplace sources by name",
+   "at": "2026-10-18T20:26:23Z"
+  },
+  {
+   "n": 338904,
+   "t": "sessions: Find sessions by pull request number",
+   "at": "2026-10-18T20:32:43Z"
+  },
+  {
+   "n": 342423,
+   "t": "sessions: filter abandoned empty Cloud tasks",
+   "at": "2026-10-18T20:40:55Z"
+  },
+  {
+   "n": 340564,
+   "t": "Fix cloud customization sync feedback loop",
+   "at": "2026-10-18T21:13:24Z"
+  },
+  {
+   "n": 342336,
+   "t": "agentHost: defer tools by default and allow-list runtime built-ins",
+   "at": "2026-10-18T21:29:58Z"
+  },
+  {
+   "n": 342429,
+   "t": "github: update telemetry to match recent changes",
+   "at": "2026-10-18T22:48:11Z"
+  },
+  {
+   "n": 342430,
+   "t": "Add marketplace protocol links with user confirmation",
+   "at": "2026-10-18T22:50:04Z"
+  },
+  {
+   "n": 342370,
+   "t": "Stop delivering steering messages the user removed from the queue",
+   "at": "2026-10-18T23:03:39Z"
+  },
+  {
+   "n": 341230,
+   "t": "chat: support named and prompted Agent Host forks",
+   "at": "2026-10-18T23:09:23Z"
+  },
+  {
+   "n": 342438,
+   "t": "sessions: skip worktree measurement for cloud sandboxes",
+   "at": "2026-10-18T23:20:25Z"
+  },
+  {
+   "n": 342437,
+   "t": "agentHost: clarify read-only connection errors",
+   "at": "2026-10-18T23:20:50Z"
+  },
+  {
+   "n": 342442,
+   "t": "welcome: Restore GitHub sign-in banner and enable by default",
+   "at": "2026-10-18T23:34:16Z"
+  },
+  {
+   "n": 342446,
+   "t": "Add component fixtures for the language status hover",
+   "at": "2026-10-18T23:48:23Z"
+  },
+  {
+   "n": 337719,
+   "t": "Show a language-status warning for diagnostic highlight limits",
+   "at": "2026-10-19T00:23:21Z"
+  },
+  {
+   "n": 342455,
+   "t": "Sessions: show application badge by default on Stable",
+   "at": "2026-10-19T00:47:25Z"
+  },
+  {
+   "n": 342440,
+   "t": "chat: download generated image batches as ZIP",
+   "at": "2026-10-19T01:17:22Z"
+  },
+  {
+   "n": 342445,
+   "t": "agentHost: wait for client tool result confirmation",
+   "at": "2026-10-19T02:00:16Z"
+  },
+  {
+   "n": 342458,
+   "t": "sessions: fix cloud read state for recorded conversations",
+   "at": "2026-10-19T02:00:22Z"
+  },
+  {
+   "n": 342450,
+   "t": "agentHost: resolve tool name conflicts",
+   "at": "2026-10-19T02:00:26Z"
+  },
+  {
+   "n": 342459,
+   "t": "agentHost: add bounded Mission Control session and failure telemetry",
+   "at": "2026-10-19T02:00:41Z"
+  },
+  {
+   "n": 342460,
+   "t": "chat: clarify remote connection method descriptions",
+   "at": "2026-10-19T02:01:47Z"
+  },
+  {
+   "n": 342456,
+   "t": "agentHost: restore isolated history without execution credentials",
+   "at": "2026-10-19T03:08:46Z"
+  },
+  {
+   "n": 342471,
+   "t": "agentHost: surface SDK inventory refusals and recover once on list",
+   "at": "2026-10-19T04:23:29Z"
+  },
+  {
+   "n": 342474,
+   "t": "[Perf] chat: reuse remote customization scopes",
+   "at": "2026-10-19T06:42:09Z"
+  },
+  {
+   "n": 342492,
+   "t": "Engineering - Run Agent Host E2E tests in their own Azure DevOps job",
+   "at": "2026-10-19T07:48:18Z"
+  },
+  {
+   "n": 342495,
+   "t": "Optimize diagnostic tasks for unit test jobs in Azure Pipelines",
+   "at": "2026-10-19T07:50:00Z"
+  },
+  {
+   "n": 342490,
+   "t": "Fix sandbox write confirmation option handling",
+   "at": "2026-10-19T08:13:48Z"
+  }
+ ]
+}

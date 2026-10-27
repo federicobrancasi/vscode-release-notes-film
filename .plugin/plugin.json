@@ -1,0 +1,10 @@
+{
+  "name": "vscode-release-notes-film",
+  "version": "0.2.0",
+  "description": "The daily VS Code changelog film and its release notes: about a minute on the top ten picks of the changelog report, each change shown in VS Code (recorded, or drawn from a library of 28 scenes) under a Liquid Glass lens, one short line said as it shows, cut on the beat of its theme, reviewed frame by frame; then its GitHub release, with notes an agent writes from the film's kit. Holds the Oct 26, 2026 film whole. Built on the changelog-videos engine. macOS.",
+  "license": "MIT",
+  "categories": ["workflow"],
+  "status": "experimental",
+  "maintainers": ["federicobrancasi"],
+  "keywords": ["video", "changelog", "motion-design", "remotion", "release-notes", "agents-window", "narration"]
+}
